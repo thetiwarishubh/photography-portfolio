@@ -6,7 +6,6 @@ Designed to showcase services, portfolio, and provide easy contact & WhatsApp bo
 ---
 
 ## 🚀 Live Demo
-👉 *(Add your Vercel live link here after deployment)*  
 Example: https://dsphotography-pi.vercel.app
 
 ---
