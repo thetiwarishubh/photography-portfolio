@@ -1,13 +1,18 @@
 const HomeIntro = () => {
   return (
-    <section className="text-center px-6 py-12 bg-[#0F0F0F] text-white max-w-3xl mx-auto">
-      <h2 className="text-3xl font-semibold mb-4 text-[#C89B3C]">
-        Capturing your precious moments with creativity and professionalism.
+    <div className="bg-[#1C1C1C]">
+    <section className="bg-[#1C1C1C] text-white py-16 px-6 max-w-7xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-[#C89B3C]">
+        Crafting Timeless Photographs & Cinematic Stories
       </h2>
-      <p className="text-gray-300 text-lg">
-        DS Photography4u — Turning memories into timeless works of art.
+
+      <p className="text-gray-300 text-lg leading-relaxed">
+        DS Photography4u is a professional photography and videography studio
+        dedicated to capturing genuine emotions, elegant moments, and
+        unforgettable stories through creative visuals and cinematic excellence.
       </p>
     </section>
+    </div>
   );
 };
 

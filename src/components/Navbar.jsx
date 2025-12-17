@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className="h-16 flex justify-between md:justify-around items-center px-6">
         {/* Logo */}
         <h3 className="text-lg text-[#C89B3C] font-semibold">
-          <Link to="/">DS Photography4u</Link>
+          <Link to="/">DS Photography</Link>
         </h3>
 
         {/* Desktop Menu */}

@@ -1,3 +1,5 @@
+import { outdoor } from "../assets/assets";
+
 import { useState } from "react";
 
 const portfolioItems = [
@@ -5,37 +7,37 @@ const portfolioItems = [
     id: 1,
     title: "Wedding Shoot",
     type: "photo",
-    imageUrl: "https://i.pinimg.com/1200x/c6/0f/d9/c60fd9aff016d5dacc5e707ffbb29dc6.jpg",
+    imageUrl: outdoor,
   },
   {
     id: 2,
     title: "Cinematic Film",
     type: "video",
-    imageUrl: "https://via.placeholder.com/400x300",
+    imageUrl: outdoor,
   },
   {
     id: 3,
     title: "Engagement Shoot",
     type: "photo",
-    imageUrl: "https://i.pinimg.com/1200x/c6/0f/d9/c60fd9aff016d5dacc5e707ffbb29dc6.jpg",
+    imageUrl: outdoor,
   },
   {
     id: 4,
     title: "Pre-Wedding Session",
     type: "photo",
-    imageUrl: "https://i.pinimg.com/1200x/c6/0f/d9/c60fd9aff016d5dacc5e707ffbb29dc6.jpg",
+    imageUrl: outdoor,
   },
   {
     id: 5,
     title: "Event Coverage",
     type: "video",
-    imageUrl: "https://pin.it/3afpYiD9H",
+    imageUrl: outdoor,
   },
   {
     id: 6,
     title: "Portraits",
     type: "photo",
-    imageUrl: "https://i.pinimg.com/1200x/c6/0f/d9/c60fd9aff016d5dacc5e707ffbb29dc6.jpg",
+    imageUrl: outdoor,
   },
 ];
 

@@ -1,4 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 const PackagesPage = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/contact");
+  }
+
   const packages = [
     {
       name: "Basic Wedding Package",
@@ -78,7 +87,7 @@ const PackagesPage = () => {
                   </li>
                 ))}
               </ul>
-              <button className="bg-[#C89B3C] text-black font-semibold py-2 px-6 rounded hover:bg-yellow-500 transition">
+              <button onClick={handleClick} className="bg-[#C89B3C] cursor-pointer text-black font-semibold py-2 px-6 rounded hover:bg-yellow-500 transition">
                 Book Now
               </button>
             </div>

@@ -1,15 +1,18 @@
+import { outdoor } from "../assets/assets";
+
 const Portfolio = () => {
   // Sample portfolio items - replace with real photos URLs or components
   const portfolioItems = [
-    { id: 1, title: "Wedding Shoot", imageUrl: "https://via.placeholder.com/400x300" },
-    { id: 2, title: "Cinematic Film", imageUrl: "https://via.placeholder.com/400x300" },
-    { id: 3, title: "Event Coverage", imageUrl: "https://via.placeholder.com/400x300" },
-    { id: 4, title: "Portrait Session", imageUrl: "https://via.placeholder.com/400x300" },
-    { id: 5, title: "Outdoor Shoot", imageUrl: "https://via.placeholder.com/400x300" },
-    { id: 6, title: "Creative Shots", imageUrl: "https://via.placeholder.com/400x300" },
+    { id: 1, title: "Wedding Shoot", imageUrl: outdoor },
+    { id: 2, title: "Cinematic Film", imageUrl: outdoor },
+    { id: 3, title: "Event Coverage", imageUrl: outdoor },
+    { id: 4, title: "Portrait Session", imageUrl: outdoor },
+    { id: 5, title: "Outdoor Shoot", imageUrl: outdoor },
+    { id: 6, title: "Creative Shots", imageUrl: outdoor },
   ];
 
   return (
+    <div className="bg-[#0F0F0F]">
     <section className="bg-[#0F0F0F] py-16 px-6 max-w-7xl mx-auto text-white">
       <h2 className="text-3xl font-bold text-[#C89B3C] mb-10 text-center">
         Portfolio
@@ -20,7 +23,11 @@ const Portfolio = () => {
             key={id}
             className="rounded-lg overflow-hidden shadow-lg hover:shadow-[#C89B3C]/60 transition"
           >
-            <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+            <img
+              src={imageUrl}
+              alt={title}
+              className="w-full h-48 object-cover"
+            />
             <div className="p-4 bg-[#1C1C1C]">
               <h3 className="font-semibold">{title}</h3>
             </div>
@@ -28,6 +35,7 @@ const Portfolio = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 
