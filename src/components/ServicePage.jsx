@@ -1,95 +1,92 @@
+import {
+  FaCameraRetro,
+  FaVideo,
+  FaHeart,
+  FaRing,
+  FaSmile,
+  FaStar,
+  FaBuilding,
+  FaFilm,
+  FaUser,
+  FaMountain,
+  // FaDrone,
+  FaBoxOpen,
+} from "react-icons/fa";
+import { TbDrone } from "react-icons/tb";
+
 const FullProServicesPage = () => {
   const services = [
     {
       title: "Wedding Photography",
       description:
-        "Capture every special moment of the wedding day — from the vows to candid celebrations.",
-      icon: "📸",
+        "Elegant and timeless photography capturing every emotion of your special day.",
+      icon: <FaCameraRetro />,
     },
     {
       title: "Wedding Videography",
       description:
-        "Cinematic full wedding coverage, creating a story you'll cherish forever.",
-      icon: "🎥",
+        "Cinematic wedding films that beautifully narrate your love story.",
+      icon: <FaVideo />,
     },
     {
       title: "Pre-Wedding Shoot",
       description:
-        "Creative pre-wedding photoshoots at stunning locations to capture your love story.",
-      icon: "🌅",
-    },
-    {
-      title: "Engagement Photography",
-      description:
-        "Professional engagement photos that perfectly capture your excitement and bond.",
-      icon: "💍",
+        "Creative pre-wedding shoots at stunning locations with cinematic aesthetics.",
+      icon: <FaHeart />,
     },
     {
       title: "Candid Photography",
       description:
-        "Documentary-style candid photography to preserve natural emotions and interactions.",
-      icon: "🎊",
+        "Natural, unposed moments captured with an artistic documentary approach.",
+      icon: <FaSmile />,
     },
     {
       title: "Highlight Films",
       description:
-        "Short cinematic highlight videos showcasing the best moments of your wedding or event.",
-      icon: "✨",
+        "Short cinematic highlight videos showcasing the best moments of your wedding.",
+      icon: <FaStar />,
     },
     {
       title: "Event Photography",
       description:
-        "Capture corporate events, parties, or social gatherings with professionalism and style.",
-      icon: "🏢",
-    },
-    {
-      title: "Event Videography",
-      description:
-        "Full video coverage of events, ensuring every important moment is recorded beautifully.",
-      icon: "🎬",
-    },
-    {
-      title: "Portrait Sessions",
-      description:
-        "Creative individual, couple, or family portraits with professional lighting and composition.",
-      icon: "👤",
-    },
-    {
-      title: "Outdoor & Destination Shoots",
-      description:
-        "Travel and outdoor photography capturing landscapes, nature, and lifestyle moments.",
-      icon: "🌄",
+        "Professional coverage for weddings, corporate events, and celebrations.",
+      icon: <FaBuilding />,
     },
     {
       title: "Drone Photography & Videography",
       description:
-        "Aerial shots for weddings, events, and cinematic projects for a breathtaking perspective.",
-      icon: "🚁",
-    },
-    {
-      title: "Commercial & Product Shoots",
-      description:
-        "Professional shoots for brands, products, and marketing campaigns.",
-      icon: "🏷️",
+        "Aerial shots that add grandeur and cinematic depth to your events.",
+      icon: <TbDrone />,
     },
   ];
 
   return (
     <section className="bg-[#0F0F0F] text-white py-20 px-6 min-h-screen">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold mb-12 text-[#C89B3C] text-center">
-          Our Services
+        <h1 className="text-4xl font-bold mb-14 text-[#C89B3C] text-center">
+          Our Professional Services
         </h1>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map(({ title, description, icon }) => (
             <div
               key={title}
-              className="bg-[#1C1C1C] p-6 rounded-lg shadow-lg hover:shadow-[#C89B3C]/50 transition transform hover:-translate-y-1"
+              className="group bg-[#1C1C1C] p-7 rounded-xl shadow-lg 
+                         hover:shadow-[#C89B3C]/40 transition-all duration-300 
+                         transform hover:-translate-y-2"
             >
-              <div className="text-4xl mb-4">{icon}</div>
-              <h2 className="text-xl font-semibold mb-2">{title}</h2>
-              <p className="text-gray-300">{description}</p>
+              {/* ICON */}
+              <div
+                className="text-4xl mb-5 text-[#C89B3C]
+                           transform transition duration-300 
+                           group-hover:scale-125 group-hover:rotate-6"
+              >
+                {icon}
+              </div>
+
+              {/* TEXT */}
+              <h2 className="text-xl font-semibold mb-3">{title}</h2>
+              <p className="text-gray-300 leading-relaxed">{description}</p>
             </div>
           ))}
         </div>
