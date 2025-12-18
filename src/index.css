@@ -5,6 +5,7 @@
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
   }
@@ -20,6 +21,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -33,9 +35,37 @@
 .delay-1 {
   animation-delay: 0.3s;
 }
+
 .delay-2 {
   animation-delay: 0.6s;
 }
+
 .delay-3 {
   animation-delay: 0.9s;
+}
+
+/* Floating dust particles */
+.dust {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: floatDust 12s linear infinite;
+}
+
+@keyframes floatDust {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(-300px) translateX(80px);
+    opacity: 0;
+  }
 }
