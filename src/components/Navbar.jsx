@@ -1,17 +1,36 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/"); // home page
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // smooth scroll
+    });
+  };
   const [open, setOpen] = useState(false);
 
-  const navItems = ["Home", "About", "Services", "Portfolio", "Packages", "Contact"];
+  const navItems = [
+    "Home",
+    "About",
+    "Services",
+    "Portfolio",
+    "Packages",
+    "Contact",
+  ];
 
   return (
     <header className="bg-[#1C1C1C] text-white fixed top-0 left-0 w-full z-50">
       <nav className="h-16 flex justify-between md:justify-around items-center px-6">
         {/* Logo */}
         <h3 className="text-lg text-[#C89B3C] font-semibold">
-          <Link to="/">DS Photography</Link>
+          <Link onClick={handleLogoClick} to="/">
+            DS Photography
+          </Link>
         </h3>
 
         {/* Desktop Menu */}

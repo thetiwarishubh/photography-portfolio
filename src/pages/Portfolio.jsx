@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar"
 import PortfolioPage from "../components/PortfolioPage"
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const Portfolio = () => {
   return (
@@ -8,6 +9,7 @@ const Portfolio = () => {
         <Navbar />
         <PortfolioPage />
         <Footer />
+        <WhatsAppButton />
     </div>
   )
 }
