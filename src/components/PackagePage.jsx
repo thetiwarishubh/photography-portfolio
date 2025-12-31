@@ -3,64 +3,246 @@ import { useNavigate } from "react-router-dom";
 const PackagesPage = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleBook = () => {
     navigate("/contact");
   };
 
   const packages = [
     {
-      name: "Basic Wedding Package",
+      title: "Basic Wedding Package",
       price: "₹50,000",
-      features: [
-        "Full-day wedding photography",
-        "100+ edited photos",
-        "Online gallery access",
-        "1 Photographer",
+      sections: [
+        {
+          heading: "Coverage & Team",
+          points: [
+            "Events Covered: Haldi / Mehndi + Wedding Day",
+            "Professional Team (3 Members)",
+            "1 Photographer (Candid & Portraits)",
+            "1 Cinematographer (Cinematic shots)",
+            "1 Videographer (Traditional Documentary)",
+          ],
+        },
+        {
+          heading: "Photography Deliverables",
+          points: [
+            "150+ Professionally Edited High-Resolution Images",
+            "Printed Album: Karizma Photo Book (30 Sheets, 12x36 inch)",
+          ],
+        },
+        {
+          heading: "Video Deliverables",
+          points: [
+            "5-Minute Cinematic Story Film",
+            "1-Minute Instagram Teaser",
+            "Traditional Video (~120 Minutes, Full HD 1080p)",
+            "1 Professionally Edited Reel",
+          ],
+        },
+        {
+          heading: "Final Delivery",
+          points: [
+            "Raw Data via Client Hard Drive",
+            "1 Branded 32GB USB 3.0 Pendrive",
+          ],
+        },
       ],
     },
+
     {
-      name: "Premium Wedding Package",
+      title: "Engagement & Reception Package",
+      price: "₹25,000",
+      sections: [
+        {
+          heading: "Coverage & Team",
+          points: [
+            "Duration: Up to 5–6 Hours",
+            "Professional Team (2 Members)",
+            "1 Photographer (Candid + Traditional)",
+            "1 Traditional Videographer",
+          ],
+        },
+        {
+          heading: "Photography Deliverables",
+          points: [
+            "100+ Edited High-Resolution Images",
+            "Quick Sneak Peek (10 Photos within 48 Hours)",
+            "Private Online Gallery",
+          ],
+        },
+        {
+          heading: "Video Deliverables",
+          points: [
+            "45–60 Minute Full Traditional Video (Full HD)",
+            "2–3 Minute Event Highlight",
+            "1 Social Media Reel",
+          ],
+        },
+        {
+          heading: "Final Delivery",
+          points: [
+            "Raw Data (Client provides Hard Drive)",
+            "Online Gallery Access for 3 Months",
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "Premium Wedding Package",
       price: "₹90,000",
-      features: [
-        "Full-day photography & videography",
-        "200+ edited photos",
-        "Highlight cinematic film (5–7 mins)",
-        "Drone photography",
-        "2 Photographers + 1 Videographer",
-        "Online gallery & USB delivery",
-      ],
       featured: true,
+      sections: [
+        {
+          heading: "Coverage & Team",
+          points: [
+            "Events: Mehndi + Haldi + Full Wedding Day",
+            "Professional Team (4 Members)",
+            "2 Photographers (Candid + Traditional)",
+            "1 Cinematographer",
+            "1 Videographer",
+          ],
+        },
+        {
+          heading: "Photography Deliverables",
+          points: [
+            "350+ Edited High-Resolution Images",
+            "Premium Album: Karizma (40 Sheets, 12x36 inch)",
+            "1 LED Photo Frame (12x18 inch)",
+          ],
+        },
+        {
+          heading: "Video Deliverables",
+          points: [
+            "5–7 Minute Cinematic Highlight Film",
+            "1-Minute Social Media Teaser",
+            "Traditional Full Documentary (~120 Minutes)",
+            "2 Professionally Edited Reels",
+          ],
+        },
+        {
+          heading: "Final Delivery",
+          points: [
+            "Raw Data via Client Hard Drive",
+            "1 Branded 32GB USB 3.0 Pendrive",
+            "Private Online Gallery",
+          ],
+        },
+      ],
     },
+
     {
-      name: "Luxury Wedding Package",
+      title: "Luxury Wedding Package",
       price: "₹1,50,000",
-      features: [
-        "Pre-wedding + engagement + wedding",
-        "Cinematic highlight & full film",
-        "Drone photo & video",
-        "Custom album design",
-        "Unlimited edited photos",
-        "3 Photographers + 2 Videographers",
-        "Premium delivery packaging",
+      sections: [
+        {
+          heading: "Coverage & Team",
+          points: [
+            "Events Covered: Pre-Wedding Shoot + Haldi / Mehndi + Wedding Day",
+            "Professional Team (4 Members)",
+            "2 Candid Photographers (Bride & Groom sides)",
+            "1 Cinematographer (Cinematic Film / Reels)",
+            "1 Traditional Videographer (Full Documentary)",
+          ],
+        },
+        {
+          heading: "Photography Deliverables",
+          points: [
+            "500+ Professionally Edited High-Resolution Images",
+            "Luxury Album: Premium Photo Book (50 Sheets, 14x40 inch)",
+            "Wall Art: 1 LED Photo Frame (20x30 inch)",
+          ],
+        },
+        {
+          heading: "Video Deliverables",
+          points: [
+            "1-Minute Instagram-ready Cinematic Teaser",
+            "5–7 Minute Story-based Highlight Film",
+            "25–30 Minute Cinematic Feature Film",
+            "Traditional Video: 90–120 Minutes (Full HD 1080p)",
+            "Social Media: 3 Edited Reels with Trending Audio",
+            "LED Wall & JIB Crane: 16:9 ratio, 16x9 & 18–30 feet",
+          ],
+        },
+        {
+          heading: "Digital Delivery",
+          points: [
+            "All Raw Data via Client Hard Drive",
+            "1 Branded 64GB USB 3.0 Pendrive",
+            "1-Year Private Online Gallery for Sharing",
+          ],
+        },
       ],
     },
+
     {
-      name: "Event / Corporate Package",
+      title: "Portrait / Pre-Wedding Package",
+      price: "₹20,000+",
+      sections: [
+        {
+          heading: "Session Details",
+          points: [
+            "2–3 Hour Dedicated Photoshoot",
+            "One Location of Your Choice",
+            "1 Photographer + 1 Assistant",
+          ],
+        },
+        {
+          heading: "Photography Deliverables",
+          points: [
+            "25+ Professionally Retouched Images",
+            "Online Proofing Gallery",
+            "Professional Lighting Setup",
+          ],
+        },
+        {
+          heading: "Video Deliverables",
+          points: ["60-Second Cinematic Teaser", "Behind-the-Scenes Reel"],
+        },
+        {
+          heading: "Final Delivery",
+          points: [
+            "Private Online Gallery (3 Months)",
+            "Turnaround Time: 7–10 Business Days",
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "Event / Corporate Package",
       price: "₹30,000+",
-      features: [
-        "Photography & videography",
-        "Edited photos & highlights",
-        "Custom requirements available",
-      ],
-    },
-    {
-      name: "Portrait / Pre-Wedding Package",
-      price: "₹15,000+",
-      features: [
-        "2–3 hour photoshoot",
-        "Location of your choice",
-        "20–30 edited photos",
-        "Professional lighting setup",
+      sections: [
+        {
+          heading: "Coverage & Team",
+          points: [
+            "Up to 4–6 Hours Coverage",
+            "1 Photographer + 1 Videographer",
+            "Seminars, Conferences, Product Launches",
+          ],
+        },
+        {
+          heading: "Photography Deliverables",
+          points: [
+            "75+ High-Resolution Edited Images",
+            "24-Hour Express Delivery for Top 10 Photos",
+            "Professional Online Gallery",
+          ],
+        },
+        {
+          heading: "Video Deliverables",
+          points: [
+            "2–3 Minute Cinematic After-Movie",
+            "Interview / Soundbite Clips",
+            "Corporate Reel for LinkedIn / Instagram",
+          ],
+        },
+        {
+          heading: "Final Delivery",
+          points: [
+            "All Raw Files via Client Hard Drive",
+            "Full Commercial Usage Rights",
+          ],
+        },
       ],
     },
   ];
@@ -68,103 +250,62 @@ const PackagesPage = () => {
   return (
     <section className="bg-[#0F0F0F] text-white py-20 px-6 min-h-screen">
       <div className="max-w-7xl mx-auto">
-        {/* Heading */}
-        <h1 className="text-4xl font-bold mb-14 text-[#C89B3C] text-center animate-fadeInUp">
-          Our Packages
+        <h1 className="text-4xl font-bold text-center mb-16 text-[#C89B3C]">
+          Our Photography Packages
         </h1>
 
-        {/* Cards */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {packages.map(({ name, price, features, featured }, index) => (
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+          {packages.map((pkg, index) => (
             <div
-              key={name}
-              style={{ animationDelay: `${index * 120}ms` }}
-              className={`
-                relative bg-[#1C1C1C] p-8 rounded-2xl shadow-lg
-                transform transition-all duration-500
-                hover:-translate-y-3 hover:scale-[1.02]
-                animate-fadeInUp
+              key={index}
+              className={`bg-[#1C1C1C] rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg border
                 ${
-                  featured
-                    ? "border-2 border-[#C89B3C] shadow-[#C89B3C]/40"
-                    : ""
+                  pkg.featured
+                    ? "border-[#C89B3C] shadow-[#C89B3C]/30"
+                    : "border-white/10"
                 }
               `}
             >
-              {/* Featured badge */}
-              {featured && (
-                <span className="absolute -top-3 right-6 bg-[#C89B3C] text-black text-sm font-semibold px-4 py-1 rounded-full shadow-md">
-                  Most Popular
-                </span>
-              )}
-
-              {/* Title */}
-              <h2 className="text-2xl font-bold mb-3 text-[#C89B3C]">{name}</h2>
-
-              {/* Price */}
-              <p className="text-xl font-semibold mb-6 animate-pulseSlow">
-                {price}
+              <h2 className="text-2xl md:text-3xl font-bold text-[#C89B3C] mb-2">
+                {pkg.title}
+              </h2>
+              <p className="text-lg md:text-xl font-semibold mb-6">
+                {pkg.price}
               </p>
 
-              {/* Features */}
-              <ul className="mb-8 space-y-2">
-                {features.map((feature, i) => (
-                  <li key={i} className="text-gray-300 flex items-start gap-2">
-                    <span className="text-[#C89B3C]">✔</span>
-                    {feature}
-                  </li>
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
+                {pkg.sections.map((section, i) => (
+                  <div key={i}>
+                    <h3 className="font-semibold text-lg mb-3 text-white">
+                      {section.heading}
+                    </h3>
+                    <ul className="space-y-2 text-gray-300">
+                      {section.points.map((point, j) => (
+                        <li key={j} className="flex gap-2">
+                          <span className="text-[#C89B3C]">✔</span>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
-              </ul>
+              </div>
 
-              {/* Button */}
               <button
-                onClick={handleClick}
-                className="
-                  w-full bg-[#C89B3C] cursor-pointer text-black font-semibold py-3 rounded-lg
-                  transition-all duration-300
-                  hover:bg-yellow-500 hover:shadow-lg hover:scale-105
-                  active:scale-95
-                "
+                onClick={handleBook}
+                className="mt-10 bg-[#C89B3C] w-full lg:w-auto text-black px-10 py-3 rounded-lg font-semibold
+                hover:scale-105 hover:shadow-xl transition cursor-pointer"
               >
                 Book Now
               </button>
+
+              <p className="mt-4 text-sm text-gray-400">
+                * Customised packages available as per your budget
+              </p>
             </div>
           ))}
         </div>
       </div>
-
-      {/* Custom Animations */}
-      <style>
-        {`
-          @keyframes fadeInUp {
-            0% {
-              opacity: 0;
-              transform: translateY(30px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-
-          .animate-fadeInUp {
-            animation: fadeInUp 0.8s ease forwards;
-          }
-
-          @keyframes pulseSlow {
-            0%, 100% {
-              opacity: 1;
-            }
-            50% {
-              opacity: 0.75;
-            }
-          }
-
-          .animate-pulseSlow {
-            animation: pulseSlow 2.5s infinite;
-          }
-        `}
-      </style>
     </section>
   );
 };
