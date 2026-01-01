@@ -5,7 +5,7 @@ import "../styles/hero.css";
 import Hero1 from "../assets/hero1.jpg";
 import Hero2 from "../assets/hero2.png";
 import Hero3 from "../assets/hero3.png";
-import Hero4 from "../assets/hero4.jpg";
+import Hero4 from "../assets/hero4.JPG";
 import Hero5 from "../assets/hero5.JPG";
 
 const images = [Hero1, Hero2, Hero3, Hero4, Hero5];
