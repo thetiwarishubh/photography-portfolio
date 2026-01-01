@@ -1,18 +1,19 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Logo from "../assets/logo.png"; // 👈 logo import
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    navigate("/"); // home page
+    navigate("/");
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // smooth scroll
+      behavior: "smooth",
     });
+    setOpen(false);
   };
-  const [open, setOpen] = useState(false);
 
   const navItems = [
     "Home",
@@ -24,14 +25,23 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-[#1C1C1C] text-white fixed top-0 left-0 w-full z-50">
+    <header className="bg-[#1C1C1C] text-white fixed top-0 left-0 w-full z-50 shadow-md">
       <nav className="h-16 flex justify-between md:justify-around items-center px-6">
-        {/* Logo */}
-        <h3 className="text-lg text-[#C89B3C] font-semibold">
-          <Link onClick={handleLogoClick} to="/">
+
+        {/* Logo + Text */}
+        <div
+          onClick={handleLogoClick}
+          className="flex items-center gap-2 cursor-pointer"
+        >
+          <img
+            src={Logo}
+            alt="DS Photography Logo"
+            className="w-8 h-8 object-contain"
+          />
+          <span className="text-lg text-[#C89B3C] font-semibold tracking-wide">
             DS Photography
-          </Link>
-        </h3>
+          </span>
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8">
@@ -39,7 +49,7 @@ const Navbar = () => {
             <li key={item}>
               <Link
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                className="hover:text-[#C89B3C] transition duration-200 p-1.5"
+                className="relative hover:text-[#C89B3C] transition duration-200 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all hover:after:w-full"
               >
                 {item}
               </Link>
@@ -47,7 +57,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Hamburger Icon */}
+        {/* Hamburger */}
         <button
           className="md:hidden flex flex-col gap-1"
           onClick={() => setOpen(!open)}
@@ -60,7 +70,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <ul className="md:hidden bg-[#1C1C1C] px-8 pb-6 space-y-4">
+        <ul className="md:hidden bg-[#1C1C1C] px-8 pb-6 space-y-4 animate-fadeIn">
           {navItems.map((item) => (
             <li key={item}>
               <Link
