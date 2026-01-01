@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import "../styles/hero.css";
 
 import Hero1 from "../assets/hero1.jpg";
@@ -16,44 +16,65 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000); // 5 sec per slide
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
+  const stars = useMemo(() => {
+    return [...Array(80)].map((_, i) => ({
+      id: i,
+      left: Math.random() * 100,
+      delay: Math.random() * 8,
+      duration: 8 + Math.random() * 8,
+      size: 1 + Math.random() * 2,
+    }));
+  }, []);
+
   return (
-    <section className="relative min-h-screen overflow-hidden text-center">
-      {/* SLIDER BACKGROUND */}
+    <section className="relative min-h-screen overflow-hidden hero-wrapper">
+      {/* IMAGE SLIDER */}
       {images.map((img, index) => (
         <img
           key={index}
           src={img}
-          alt="Hero"
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 hero-zoom
+          className={`absolute inset-0 w-full h-full object-cover hero-zoom transition-opacity duration-1000
             ${index === current ? "opacity-100" : "opacity-0"}
           `}
         />
       ))}
 
-      {/* Overlay */}
+      <div className="absolute inset-0 star-layer pointer-events-none">
+        {stars.map((star) => (
+          <span
+            key={star.id}
+            className="star"
+            style={{
+              left: `${star.left}%`,
+              animationDelay: `${star.delay}s`,
+              animationDuration: `${star.duration}s`,
+              width: `${star.size}px`,
+              height: `${star.size}px`,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* OVERLAY */}
       <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6">
-        <h1 className="hero-heading hero-float text-5xl md:text-6xl font-bold text-[#C89B3C] mb-4">
+      {/* CONTENT */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center">
+        <h1 className="hero-heading text-5xl md:text-6xl font-bold text-[#C89B3C] mb-4">
           We Capture Happiness
         </h1>
 
         <p className="text-gray-300 max-w-xl mb-8 text-lg md:text-xl fade-up delay-2">
-          Professional photography & videography services to create timeless
-          wedding, event & cinematic stories.
+          Professional photography & videography services
         </p>
 
         <Link to="/contact" className="fade-up delay-3">
-          <button
-            className="bg-[#C89B3C] text-[#0F0F0F] px-8 py-3 rounded-md font-semibold 
-          hover:scale-105 hover:shadow-xl transition duration-300"
-          >
+          <button className="bg-[#C89B3C] px-8 py-3 rounded-md font-semibold hover:scale-105 transition">
             Book a Session
           </button>
         </Link>
