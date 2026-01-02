@@ -1,10 +1,10 @@
-import hero from "./hero5.jpg";
+import wedding from "./wedding.jpg";
 import cinematic from "./cinematic.jpg";
 import event from "./events.jpg";
 import owner from "./owner.jpg"
 
 export {
-  hero,
+  wedding,
   cinematic,
   event,
   owner
