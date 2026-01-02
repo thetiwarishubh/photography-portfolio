@@ -1,13 +1,13 @@
-import { outdoor } from "../assets/assets";
+import { cinematic } from "../assets/assets";
 import { useState } from "react";
 
 const portfolioItems = [
-  { id: 1, title: "Wedding Shoot", type: "photo", imageUrl: outdoor },
-  { id: 2, title: "Cinematic Film", type: "video", imageUrl: outdoor },
-  { id: 3, title: "Engagement Shoot", type: "photo", imageUrl: outdoor },
-  { id: 4, title: "Pre-Wedding Session", type: "photo", imageUrl: outdoor },
-  { id: 5, title: "Event Coverage", type: "video", imageUrl: outdoor },
-  { id: 6, title: "Portraits", type: "photo", imageUrl: outdoor },
+  { id: 1, title: "Wedding Shoot", type: "photo", imageUrl: cinematic },
+  { id: 2, title: "Cinematic Film", type: "video", imageUrl: cinematic },
+  { id: 3, title: "Engagement Shoot", type: "photo", imageUrl: cinematic },
+  { id: 4, title: "Pre-Wedding Session", type: "photo", imageUrl: cinematic },
+  { id: 5, title: "Event Coverage", type: "video", imageUrl: cinematic },
+  { id: 6, title: "Portraits", type: "photo", imageUrl: cinematic },
 ];
 
 const PortfolioPage = () => {

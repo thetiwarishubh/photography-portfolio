@@ -1,14 +1,11 @@
-import { outdoor } from "../assets/assets";
+import { wedding, event, cinematic } from "../assets/assets";
 
 const Portfolio = () => {
   // Sample portfolio items - replace with real photos URLs or components
   const portfolioItems = [
-    { id: 1, title: "Wedding Shoot", imageUrl: outdoor },
-    { id: 2, title: "Cinematic Film", imageUrl: outdoor },
-    { id: 3, title: "Event Coverage", imageUrl: outdoor },
-    { id: 4, title: "Portrait Session", imageUrl: outdoor },
-    { id: 5, title: "Outdoor Shoot", imageUrl: outdoor },
-    { id: 6, title: "Creative Shots", imageUrl: outdoor },
+    { id: 1, title: "Wedding Shoot", imageUrl: wedding },
+    { id: 2, title: "Cinematic Film", imageUrl: cinematic },
+    { id: 3, title: "Event Coverage", imageUrl: event },
   ];
 
   return (
