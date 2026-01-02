@@ -51,8 +51,8 @@ const Footer = () => {
         <div>
           <h4 className="font-medium mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li>📍 Delhi, India</li>
-            <li>📞 +91 98765 43210</li>
+            <li>📍 Shital Bazar, Ghoghraha, Bariyadih, Bihar 845435</li>
+            <li>📞 +91 82982 46846</li>
             <li>✉️ dsphotography4u@gmail.com</li>
           </ul>
         </div>

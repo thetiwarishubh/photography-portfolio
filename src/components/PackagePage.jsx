@@ -236,10 +236,11 @@ const PackagesPage = () => {
   ];
 
   return (
-    <section className="bg-[#0F0F0F] text-white py-20 px-6 min-h-screen">
+    <section className="bg-[#0F0F0F] text-white py-24 px-6 min-h-screen">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-16 text-[#C89B3C]">
-          Our Photography Packages
+        <h1 className="text-5xl font-light tracking-wide text-center mb-16">
+          Our Packages
+          <div className="w-24 h-[1px] bg-gray-600 mx-auto mt-6"></div>
         </h1>
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">

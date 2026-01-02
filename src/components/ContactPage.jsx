@@ -24,17 +24,14 @@ const ContactPage = () => {
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-light tracking-wide mb-3">
-            Contact Us
-          </h1>
+          <h1 className="text-5xl font-light tracking-wide mb-3">Contact Us</h1>
           <p className="text-sm tracking-[0.2em] text-gray-400">
-            Let’s talk about your story. Reach out to book a session or ask
-            anything.
+            Let’s talk about your story
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-14 items-start">
-          {/* LEFT – INFO */}
+          {/* LEFT INFO */}
           <div className="space-y-8">
             <h2 className="text-2xl font-semibold text-[#C89B3C]">
               Get in Touch
@@ -42,33 +39,44 @@ const ContactPage = () => {
 
             <p className="text-gray-300 leading-relaxed">
               We specialize in wedding photography, cinematic films, and
-              creative storytelling. Fill the form or connect directly using the
-              details below.
+              storytelling. Reach us anytime.
             </p>
 
             <div className="space-y-5 text-gray-300">
               <div className="flex items-center gap-4">
                 <FaEnvelope className="text-[#C89B3C]" />
-                <span>info@dsphotography4u.com</span>
+                <span>dsphotography4u@gmail.com</span>
               </div>
 
               <div className="flex items-center gap-4">
                 <FaPhoneAlt className="text-[#C89B3C]" />
-                <span>+91 98765 43210</span>
+                <span>+91 82982 46846</span>
               </div>
 
               <div className="flex items-center gap-4">
                 <FaMapMarkerAlt className="text-[#C89B3C]" />
-                <span>Mumbai, India</span>
+                <span>Shital Bazar, Ghoghraha, Bariyadih, Bihar 845435</span>
               </div>
+            </div>
+
+            {/* MAP (IMAGE-2 STYLE) */}
+            <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+              <iframe
+                title="DS Photography Location"
+                src="https://www.google.com/maps?q=DS+PHOTOGRAPHY,+Shital+Bazar,+Ghoghraha,+Bariyadih,+Bihar+845435&output=embed"
+                width="100%"
+                height="300"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+              ></iframe>
             </div>
           </div>
 
-          {/* RIGHT – FORM */}
+          {/* RIGHT FORM */}
           <form
             onSubmit={handleSubmit}
-            className="bg-[#1C1C1C] p-8 rounded-2xl shadow-xl
-                       transition-transform duration-500 hover:-translate-y-1"
+            className="bg-[#1C1C1C] p-8 rounded-2xl shadow-xl"
           >
             <div className="space-y-5">
               {[
@@ -115,9 +123,8 @@ const ContactPage = () => {
                 type="submit"
                 className="w-full mt-4 bg-[#C89B3C] text-black
                            font-semibold py-3 rounded-md
-                           transition-all duration-300
                            hover:bg-yellow-500 hover:shadow-lg
-                           active:scale-95"
+                           active:scale-95 transition"
               >
                 Send Message
               </button>

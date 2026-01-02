@@ -14,11 +14,12 @@ const PortfolioPage = () => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <section className="bg-[#0F0F0F] text-white py-20 px-6 min-h-screen">
+    <section className="bg-[#0F0F0F] text-white py-24 px-6 min-h-screen">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h1 className="text-4xl font-bold mb-14 text-[#C89B3C] text-center animate-fadeInUp">
+        <h1 className="text-5xl font-light tracking-wide text-center mb-16">
           Portfolio
+          <div className="w-24 h-[1px] bg-gray-600 mx-auto mt-6"></div>
         </h1>
 
         {/* Grid */}
