@@ -1,9 +1,9 @@
-import { wedding, event, cinematic } from "../assets/assets";
+import { hero, event, cinematic } from "../assets/assets";
 
 const Portfolio = () => {
   // Sample portfolio items - replace with real photos URLs or components
   const portfolioItems = [
-    { id: 1, title: "Wedding Shoot", imageUrl: wedding },
+    { id: 1, title: "Wedding Shoot", imageUrl: hero },
     { id: 2, title: "Cinematic Film", imageUrl: cinematic },
     { id: 3, title: "Event Coverage", imageUrl: event },
   ];
