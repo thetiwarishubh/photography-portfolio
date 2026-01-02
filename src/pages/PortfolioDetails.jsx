@@ -50,7 +50,7 @@ const PortfolioDetails = () => {
           {/* CLOSE */}
           <button
             onClick={() => setActiveIndex(null)}
-            className="absolute top-6 right-6 text-white text-3xl"
+            className="absolute top-6 right-6 text-white text-3xl cursor-pointer"
           >
             ✕
           </button>
@@ -58,7 +58,11 @@ const PortfolioDetails = () => {
           {/* PREV */}
           <button
             onClick={prevImage}
-            className="absolute left-6 text-white text-4xl"
+            className="absolute left-6 pb-2 text-white text-4xl cursor-pointer 
+           w-12 h-12 rounded-full 
+           flex items-center justify-center
+           border border-transparent hover:border-white
+           transition duration-200"
           >
             ‹
           </button>
@@ -73,7 +77,11 @@ const PortfolioDetails = () => {
           {/* NEXT */}
           <button
             onClick={nextImage}
-            className="absolute right-6 text-white text-4xl"
+            className="absolute right-6 pb-2 text-white text-4xl cursor-pointer 
+           w-12 h-12 rounded-full 
+           flex items-center justify-center
+           border border-transparent hover:border-white
+           transition duration-200"
           >
             ›
           </button>
