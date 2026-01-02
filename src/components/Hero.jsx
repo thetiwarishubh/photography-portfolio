@@ -69,7 +69,7 @@ const Hero = () => {
           We Capture Happiness
         </h1>
 
-        <p className="text-gray-300 max-w-xl mb-8 text-lg md:text-xl fade-up delay-2">
+        <p className="text-gray-300 max-w-xl mb-8 text-sm md:text-base tracking-[0.2em] fade-up delay-2">
           Professional photography & videography services
         </p>
 

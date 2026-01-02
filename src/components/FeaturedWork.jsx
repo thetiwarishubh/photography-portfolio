@@ -6,7 +6,7 @@ const FeaturedWork = () => {
         Featured Work
       </h2>
 
-      <p className="max-w-3xl mx-auto text-gray-300 mb-10">
+      <p className="max-w-3xl text-sm md:text-base mx-auto text-gray-300 mb-10">
         A curated selection of our finest photography and cinematic projects,
         highlighting our passion for storytelling and visual excellence.
       </p>

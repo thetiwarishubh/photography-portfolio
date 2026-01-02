@@ -24,10 +24,10 @@ const ContactPage = () => {
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#C89B3C] mb-4">
+          <h1 className="text-5xl font-light tracking-wide mb-3">
             Contact Us
           </h1>
-          <p className="text-gray-400 max-w-xl mx-auto">
+          <p className="text-sm tracking-[0.2em] text-gray-400">
             Let’s talk about your story. Reach out to book a session or ask
             anything.
           </p>

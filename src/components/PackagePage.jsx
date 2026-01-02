@@ -137,38 +137,36 @@ const PackagesPage = () => {
         {
           heading: "Coverage & Team",
           points: [
-            "Events Covered: Pre-Wedding Shoot + Haldi / Mehndi + Wedding Day",
+            "Pre-Wedding + Haldi / Mehndi + Wedding Day",
             "Professional Team (4 Members)",
-            "2 Candid Photographers (Bride & Groom sides)",
-            "1 Cinematographer (Cinematic Film / Reels)",
-            "1 Traditional Videographer (Full Documentary)",
+            "2 Candid Photographers",
+            "1 Cinematographer",
+            "1 Traditional Videographer",
           ],
         },
         {
           heading: "Photography Deliverables",
           points: [
-            "500+ Professionally Edited High-Resolution Images",
-            "Luxury Album: Premium Photo Book (50 Sheets, 14x40 inch)",
-            "Wall Art: 1 LED Photo Frame (20x30 inch)",
+            "500+ Edited High-Resolution Images",
+            "Luxury Album (50 Sheets, 14x40 inch)",
+            "LED Photo Frame (20x30 inch)",
           ],
         },
         {
           heading: "Video Deliverables",
           points: [
-            "1-Minute Instagram-ready Cinematic Teaser",
-            "5–7 Minute Story-based Highlight Film",
-            "25–30 Minute Cinematic Feature Film",
-            "Traditional Video: 90–120 Minutes (Full HD 1080p)",
-            "Social Media: 3 Edited Reels with Trending Audio",
-            "LED Wall & JIB Crane: 16:9 ratio, 16x9 & 18–30 feet",
+            "Cinematic Teaser + Highlight Film",
+            "25–30 Minute Feature Film",
+            "Traditional Video (90–120 Minutes)",
+            "3 Social Media Reels",
           ],
         },
         {
           heading: "Digital Delivery",
           points: [
             "All Raw Data via Client Hard Drive",
-            "1 Branded 64GB USB 3.0 Pendrive",
-            "1-Year Private Online Gallery for Sharing",
+            "64GB Branded USB 3.0",
+            "1-Year Online Gallery",
           ],
         },
       ],
@@ -181,29 +179,26 @@ const PackagesPage = () => {
         {
           heading: "Session Details",
           points: [
-            "2–3 Hour Dedicated Photoshoot",
-            "One Location of Your Choice",
-            "1 Photographer + 1 Assistant",
+            "2–3 Hour Photoshoot",
+            "One Location",
+            "1 Photographer + Assistant",
           ],
         },
         {
           heading: "Photography Deliverables",
           points: [
-            "25+ Professionally Retouched Images",
+            "25+ Retouched Images",
             "Online Proofing Gallery",
             "Professional Lighting Setup",
           ],
         },
         {
           heading: "Video Deliverables",
-          points: ["60-Second Cinematic Teaser", "Behind-the-Scenes Reel"],
+          points: ["60s Cinematic Teaser", "Behind-the-Scenes Reel"],
         },
         {
           heading: "Final Delivery",
-          points: [
-            "Private Online Gallery (3 Months)",
-            "Turnaround Time: 7–10 Business Days",
-          ],
+          points: ["Online Gallery (3 Months)", "Delivery: 7–10 Days"],
         },
       ],
     },
@@ -215,33 +210,26 @@ const PackagesPage = () => {
         {
           heading: "Coverage & Team",
           points: [
-            "Up to 4–6 Hours Coverage",
-            "1 Photographer + 1 Videographer",
-            "Seminars, Conferences, Product Launches",
+            "4–6 Hours Coverage",
+            "Photographer + Videographer",
+            "Corporate / Events",
           ],
         },
         {
           heading: "Photography Deliverables",
           points: [
-            "75+ High-Resolution Edited Images",
-            "24-Hour Express Delivery for Top 10 Photos",
-            "Professional Online Gallery",
+            "75+ Edited Images",
+            "24h Express Delivery",
+            "Online Gallery",
           ],
         },
         {
           heading: "Video Deliverables",
-          points: [
-            "2–3 Minute Cinematic After-Movie",
-            "Interview / Soundbite Clips",
-            "Corporate Reel for LinkedIn / Instagram",
-          ],
+          points: ["2–3 Min After-Movie", "Interview Clips", "Corporate Reel"],
         },
         {
           heading: "Final Delivery",
-          points: [
-            "All Raw Files via Client Hard Drive",
-            "Full Commercial Usage Rights",
-          ],
+          points: ["All Raw Files", "Commercial Usage Rights"],
         },
       ],
     },
@@ -259,49 +247,57 @@ const PackagesPage = () => {
             <div
               key={index}
               className={`bg-[#1C1C1C] rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg border
-                ${
-                  pkg.featured
-                    ? "border-[#C89B3C] shadow-[#C89B3C]/30"
-                    : "border-white/10"
-                }
-              `}
+              flex flex-col h-full
+              ${
+                pkg.featured
+                  ? "border-[#C89B3C] shadow-[#C89B3C]/30"
+                  : "border-white/10"
+              }`}
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-[#C89B3C] mb-2">
-                {pkg.title}
-              </h2>
-              <p className="text-lg md:text-xl font-semibold mb-6">
-                {pkg.price}
-              </p>
+              {/* CONTENT */}
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-[#C89B3C] mb-2">
+                  {pkg.title}
+                </h2>
 
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
-                {pkg.sections.map((section, i) => (
-                  <div key={i}>
-                    <h3 className="font-semibold text-lg mb-3 text-white">
-                      {section.heading}
-                    </h3>
-                    <ul className="space-y-2 text-gray-300">
-                      {section.points.map((point, j) => (
-                        <li key={j} className="flex gap-2">
-                          <span className="text-[#C89B3C]">✔</span>
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                <p className="text-lg md:text-xl font-semibold mb-6">
+                  {pkg.price}
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-10">
+                  {pkg.sections.map((section, i) => (
+                    <div key={i}>
+                      <h3 className="font-semibold text-lg mb-3">
+                        {section.heading}
+                      </h3>
+
+                      <ul className="space-y-2 text-gray-300 text-sm">
+                        {section.points.map((point, j) => (
+                          <li key={j} className="flex gap-2">
+                            <span className="text-[#C89B3C]">✔</span>
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              <button
-                onClick={handleBook}
-                className="mt-10 bg-[#C89B3C] w-full lg:w-auto text-black px-10 py-3 rounded-lg font-semibold
-                hover:scale-105 hover:shadow-xl transition cursor-pointer"
-              >
-                Book Now
-              </button>
+              {/* BUTTON - FIXED BOTTOM */}
+              <div className="mt-auto">
+                <button
+                  onClick={handleBook}
+                  className="mt-10 bg-[#C89B3C] text-black px-10 py-3 rounded-lg font-semibold
+                  hover:scale-105 hover:shadow-xl transition w-full lg:w-auto"
+                >
+                  Book Now
+                </button>
 
-              <p className="mt-4 text-sm text-gray-400">
-                * Customised packages available as per your budget
-              </p>
+                <p className="mt-4 text-sm text-gray-400">
+                  * Customised packages available as per your budget
+                </p>
+              </div>
             </div>
           ))}
         </div>

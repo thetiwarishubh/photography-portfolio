@@ -6,8 +6,8 @@ const HomeIntro = () => {
         Crafting Timeless Photographs & Cinematic Stories
       </h2>
 
-      <p className="text-gray-300 text-lg leading-relaxed">
-        DS Photography4u is a professional photography and videography studio
+      <p className="text-gray-300 text-[15px] leading-7">
+        DS Photography is a professional photography and videography studio
         dedicated to capturing genuine emotions, elegant moments, and
         unforgettable stories through creative visuals and cinematic excellence.
       </p>

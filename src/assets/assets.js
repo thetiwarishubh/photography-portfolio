@@ -4,6 +4,7 @@ import event from "./event.jpeg";
 import portrait from "./portrait.jpeg";
 import outdoor from "./outdoor.jpeg";
 import creative from "./creative.jpeg";
+import owner from "./owner.jpg"
 
 export {
   wedding,
@@ -12,4 +13,5 @@ export {
   portrait,
   outdoor,
   creative,
+  owner
 };

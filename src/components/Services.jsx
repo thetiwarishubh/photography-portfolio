@@ -29,8 +29,8 @@ const Services = () => {
             key={title}
             className="bg-[#0F0F0F] p-6 md:p-10 rounded-lg shadow-lg hover:shadow-[#C89B3C]/50 transition"
           >
-            <h3 className="text-xl font-semibold mb-3">{title}</h3>
-            <p className="text-gray-300">{description}</p>
+            <h3 className="text-lg font-semibold mb-3">{title}</h3>
+            <p className="text-gray-300 text-[15px]">{description}</p>
           </div>
         ))}
       </div>

@@ -2,15 +2,14 @@ import {
   FaCameraRetro,
   FaVideo,
   FaHeart,
-  FaRing,
   FaSmile,
-  FaStar,
-  FaBuilding,
+  FaBaby,
+  FaCalendarCheck,
   FaFilm,
-  FaUser,
-  FaMountain,
-  // FaDrone,
-  FaBoxOpen,
+  FaBookOpen,
+  FaCut,
+  FaBroadcastTower,
+  FaUserTie,
 } from "react-icons/fa";
 import { TbDrone } from "react-icons/tb";
 
@@ -19,52 +18,83 @@ const FullProServicesPage = () => {
     {
       title: "Wedding Photography",
       description:
-        "Elegant and timeless photography capturing every emotion of your special day.",
+        "Capturing the timeless beauty and traditions of your special day with elegance and emotion.",
       icon: <FaCameraRetro />,
     },
     {
       title: "Wedding Videography",
       description:
-        "Cinematic wedding films that beautifully narrate your love story.",
+        "Complete cinematic coverage of your wedding celebrations with storytelling visuals.",
       icon: <FaVideo />,
     },
     {
-      title: "Pre-Wedding Shoot",
+      title: "Cinematography",
       description:
-        "Creative pre-wedding shoots at stunning locations with cinematic aesthetics.",
+        "High-end storytelling using professional film techniques, grading, and cinematic frames.",
+      icon: <FaFilm />,
+    },
+    {
+      title: "Pre-Wedding Shoot & Engagement",
+      description:
+        "Creative and romantic sessions celebrating your journey before the “I do.",
       icon: <FaHeart />,
     },
     {
       title: "Candid Photography",
       description:
-        "Natural, unposed moments captured with an artistic documentary approach.",
+        "Capturing raw, unscripted emotions and moments in between, naturally and beautifully.",
       icon: <FaSmile />,
     },
     {
-      title: "Highlight Films",
+      title: "Maternity & Newborn",
       description:
-        "Short cinematic highlight videos showcasing the best moments of your wedding.",
-      icon: <FaStar />,
+        "Preserving the tender first moments of your growing family with warmth and care.",
+      icon: <FaBaby />,
     },
     {
       title: "Event Photography",
       description:
         "Professional coverage for weddings, corporate events, and celebrations.",
-      icon: <FaBuilding />,
+      icon: <FaCalendarCheck />,
     },
     {
       title: "Drone Photography & Videography",
       description:
-        "Aerial shots that add grandeur and cinematic depth to your events.",
+        "Breathtaking 4K aerial views that give your events a grand cinematic perspective.",
       icon: <TbDrone />,
+    },
+    {
+      title: "Portrait & Headshots",
+      description:
+        "High-end imagery for personal branding, performers, and corporate profiles.",
+      icon: <FaUserTie />,
+    },
+    {
+      title: "LED Wall & Crane",
+      description:
+        "Full-scale event production with live displays and dynamic camera angles.",
+      icon: <FaBroadcastTower />,
+    },
+    {
+      title: "Video Editing",
+      description:
+        "Expert post-production turning raw footage into a polished cinematic masterpiece.",
+      icon: <FaCut />,
+    },
+    {
+      title: "Photo Album Design & Printing",
+      description:
+        "Premium handcrafted albums designed to preserve your memories for generations.",
+      icon: <FaBookOpen />,
     },
   ];
 
   return (
-    <section className="bg-[#0F0F0F] text-white py-20 px-6 min-h-screen">
+    <section className="bg-[#0F0F0F] text-white py-24 px-6 min-h-screen">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold mb-14 text-[#C89B3C] text-center">
-          Our Professional Services
+        <h1 className="text-5xl font-light tracking-wide mb-14 text-center">
+          Our Services
+        <div className="w-24 h-[1px] bg-gray-600 mx-auto mt-6"></div>
         </h1>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -77,7 +107,7 @@ const FullProServicesPage = () => {
             >
               {/* ICON */}
               <div
-                className="text-4xl mb-5 text-[#C89B3C]
+                className="text-3xl mb-5 text-[#C89B3C]
                            transform transition duration-300 
                            group-hover:scale-125 group-hover:rotate-6"
               >
@@ -85,8 +115,8 @@ const FullProServicesPage = () => {
               </div>
 
               {/* TEXT */}
-              <h2 className="text-xl font-semibold mb-3">{title}</h2>
-              <p className="text-gray-300 leading-relaxed">{description}</p>
+              <h2 className="text-lg font-semibold mb-3">{title}</h2>
+              <p className="text-[15px] text-gray-300 leading-relaxed">{description}</p>
             </div>
           ))}
         </div>
