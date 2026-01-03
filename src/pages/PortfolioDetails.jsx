@@ -71,7 +71,7 @@ const PortfolioDetails = () => {
           <img
             src={portfolio.images[activeIndex]}
             alt=""
-            className="max-h-[85vh] max-w-[90vw] rounded-lg shadow-2xl"
+            className="max-h-[85vh] max-w-[90vw] rounded-lg shadow-2xl border border-white/70"
           />
 
           {/* NEXT */}

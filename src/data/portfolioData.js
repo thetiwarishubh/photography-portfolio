@@ -1,8 +1,20 @@
 import cinematic from "../assets/cinematic.jpg";
 import wedding from "../assets/wedding.jpg";
 import owner from "../assets/owner.jpg";
-import { hero1, hero4, hero5 } from "../assets/assets";
-import { portrait, preWedding, portraitOne } from "../assets/assets";
+import {
+  hero1,
+  hero4,
+  hero5,
+  portrait,
+  preWedding,
+  portraitOne,
+  cinematicOne,
+  cinematicTwo,
+  cinematicThree,
+  engagement,
+  engagementOne,
+  engagementTwo,
+} from "../assets/assets";
 
 export const portfolioData = [
   {
@@ -16,15 +28,15 @@ export const portfolioData = [
     title: "Cinematic Film",
     slug: "cinematic-film",
     type: "video",
-    cover: cinematic,
-    images: [cinematic, wedding, owner],
+    cover: cinematicOne,
+    images: [cinematicOne, cinematicTwo, cinematicThree],
   },
   {
     title: "Engagement Shoot",
     slug: "engagement-shoot",
     type: "photo",
-    cover: owner,
-    images: [owner, wedding, cinematic],
+    cover: engagement,
+    images: [engagement, engagementOne, engagementTwo],
   },
   {
     title: "Pre Wedding & Portrait",
