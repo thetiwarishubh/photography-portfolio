@@ -24,11 +24,11 @@ const AboutPage = () => {
           <div className="flex-1 text-gray-300 text-[15px] leading-7 space-y-6">
             <p>
               <span className="text-white font-medium">DS Photography</span>, led
-              by <span className="text-white font-medium">Dinesh Singh</span>, is
-              a professionally established photography and cinematography brand
+              by <span className="text-white font-medium">Dinesh Kumar Kushwaha</span>, is
+              an established professionally photography and cinematography brand
               with over <span className="text-[#C89B3C]">15 years of industry experience</span>.
-              We deliver world-class creative photography services with a strong
-              focus on quality, affordability, and artistic excellence.
+              We deliver world-class creative services with a strong
+              focus on quality, value, and artistic excellence.
             </p>
 
             <p>
@@ -41,16 +41,16 @@ const AboutPage = () => {
 
             <p>
               In addition to photography, we provide comprehensive services such
-              as <span className="text-white">cinematography, videography, and
+              as <span className="text-white">cinematic, videography, and
               premium event coverage</span>. Our approach is subtle and
               story-driven, allowing events to flow naturally without forced
               poses, preserving genuine emotions as they unfold.
             </p>
 
             <p>
-              Trusted by <span className="text-[#C89B3C]">6000+ satisfied clients</span>,
-              DS Photography has built a reputation for professionalism, safety,
-              and attention to detail. Every project is executed using
+              Trusted by <span className="text-[#C89B3C]">2000+ satisfied clients</span>,
+              DS Photography has built a reputation for <span className="text-white"> professionalism, reliability,
+              and attention to detail</span>. Every project is executed using
               industry-standard equipment and a carefully planned workflow.
             </p>
           </div>
@@ -83,7 +83,7 @@ const AboutPage = () => {
           <div className="flex items-center gap-4 bg-[#1A1A1A] p-6 rounded-xl">
             <FaUsers className="text-[#C89B3C] text-3xl" />
             <div>
-              <h3 className="text-xl font-semibold">6000+ Clients</h3>
+              <h3 className="text-xl font-semibold">2000+ Clients</h3>
               <p className="text-gray-400 text-sm">Happy Customers</p>
             </div>
           </div>

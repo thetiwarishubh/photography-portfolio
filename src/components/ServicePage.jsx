@@ -34,15 +34,15 @@ const FullProServicesPage = () => {
       icon: <FaFilm />,
     },
     {
-      title: "Pre-Wedding Shoot & Engagement",
+      title: "Pre-Wedding & Engagement",
       description:
-        "Creative and romantic sessions celebrating your journey before the “I do.",
+        "Creative and romantic sessions celebrating your journey before the the Big Day.",
       icon: <FaHeart />,
     },
     {
       title: "Candid Photography",
       description:
-        "Capturing raw, unscripted emotions and moments in between, naturally and beautifully.",
+        "Capturing authentic, unscripted emotions and moments in between, naturally and beautifully.",
       icon: <FaSmile />,
     },
     {
@@ -54,7 +54,7 @@ const FullProServicesPage = () => {
     {
       title: "Event Photography",
       description:
-        "Professional coverage for weddings, corporate events, and celebrations.",
+        "Professional coverage for corporate events, and celebrations.",
       icon: <FaCalendarCheck />,
     },
     {
