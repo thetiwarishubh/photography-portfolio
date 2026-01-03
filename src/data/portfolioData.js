@@ -2,6 +2,7 @@ import cinematic from "../assets/cinematic.jpg";
 import wedding from "../assets/wedding.jpg";
 import owner from "../assets/owner.jpg";
 import { hero1, hero4, hero5 } from "../assets/assets";
+import { portrait, preWedding, portraitOne } from "../assets/assets";
 
 export const portfolioData = [
   {
@@ -29,8 +30,8 @@ export const portfolioData = [
     title: "Pre Wedding & Portrait",
     slug: "pre-wedding-&-portrait-photography",
     type: "photo",
-    cover: wedding,
-    images: [wedding, owner, cinematic],
+    cover: portrait,
+    images: [portrait, preWedding, portraitOne],
   },
   {
     title: "Event Coverage",
