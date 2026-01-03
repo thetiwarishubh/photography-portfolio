@@ -1,9 +1,7 @@
 import cinematic from "../assets/cinematic.jpg";
 import wedding from "../assets/wedding.jpg";
 import owner from "../assets/owner.jpg";
-import hero1 from "../assets/hero1.jpg"
-import hero4 from "../assets/hero4.jpg"
-import hero5 from "../assets/hero5.jpg"
+import { hero1, hero4, hero5 } from "../assets/assets";
 
 export const portfolioData = [
   {
