@@ -5,12 +5,9 @@ const AboutPage = () => {
   return (
     <section className="bg-[#0F0F0F] text-white min-h-screen px-6 py-24">
       <div className="max-w-7xl mx-auto">
-
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-light tracking-wide mb-3">
-            About Us
-          </h1>
+          <h1 className="text-5xl font-light tracking-wide mb-3">About Us</h1>
           <p className="uppercase text-sm tracking-[0.3em] text-gray-400">
             Our Accomplishments
           </p>
@@ -19,16 +16,21 @@ const AboutPage = () => {
 
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-center gap-16">
-
           {/* Left Text */}
           <div className="flex-1 text-gray-300 text-[15px] leading-7 space-y-6">
             <p>
-              <span className="text-white font-medium">DS Photography</span>, led
-              by <span className="text-white font-medium">Dinesh Kumar Kushwaha</span>, is
-              an established professionally photography and cinematography brand
-              with over <span className="text-[#C89B3C]">15 years of industry experience</span>.
-              We deliver world-class creative services with a strong
-              focus on quality, value, and artistic excellence.
+              <span className="text-white font-medium">DS Photography</span>,
+              led by{" "}
+              <span className="text-white font-medium">
+                Dinesh Kumar Kushwaha
+              </span>
+              , is an established professionally photography and cinematography
+              brand with over{" "}
+              <span className="text-[#C89B3C]">
+                15 years of industry experience
+              </span>
+              . We deliver world-class creative services with a strong focus on
+              quality, value, and artistic excellence.
             </p>
 
             <p>
@@ -41,17 +43,25 @@ const AboutPage = () => {
 
             <p>
               In addition to photography, we provide comprehensive services such
-              as <span className="text-white">cinematic, videography, and
-              premium event coverage</span>. Our approach is subtle and
-              story-driven, allowing events to flow naturally without forced
-              poses, preserving genuine emotions as they unfold.
+              as{" "}
+              <span className="text-white">
+                cinematic, videography, and premium event coverage
+              </span>
+              . Our approach is subtle and story-driven, allowing events to flow
+              naturally without forced poses, preserving genuine emotions as
+              they unfold.
             </p>
 
             <p>
-              Trusted by <span className="text-[#C89B3C]">2000+ satisfied clients</span>,
-              DS Photography has built a reputation for <span className="text-white"> professionalism, reliability,
-              and attention to detail</span>. Every project is executed using
-              industry-standard equipment and a carefully planned workflow.
+              Trusted by{" "}
+              <span className="text-[#C89B3C]">2000+ satisfied clients</span>,
+              DS Photography has built a reputation for{" "}
+              <span className="text-white">
+                {" "}
+                professionalism, reliability, and attention to detail
+              </span>
+              . Every project is executed using industry-standard equipment and
+              a carefully planned workflow.
             </p>
           </div>
 
@@ -96,7 +106,6 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

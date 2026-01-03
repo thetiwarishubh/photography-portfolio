@@ -26,8 +26,10 @@ const Portfolio = () => {
                 className="w-full h-64 object-cover"
               />
 
-              <div className="absolute inset-0 bg-black/50 opacity-1000 hover:opacity-0
-                              flex flex-col items-center justify-center transition">
+              <div
+                className="absolute inset-0 bg-black/50 opacity-1000 hover:opacity-0
+                              flex flex-col items-center justify-center transition"
+              >
                 <h2 className="text-xl font-semibold">{item.title}</h2>
                 <span className="mt-2 px-4 py-1 bg-[#C89B3C] text-black text-sm rounded-full">
                   {item.type.toUpperCase()}

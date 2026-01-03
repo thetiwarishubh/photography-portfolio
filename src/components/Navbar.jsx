@@ -24,7 +24,6 @@ const Navbar = () => {
   return (
     <header className="bg-[#1C1C1C] text-white fixed top-0 left-0 w-full z-50 shadow-md">
       <nav className="min-h-[80px] flex justify-between lg:justify-around items-center px-6">
-        
         {/* Logo */}
         <div
           onClick={handleLogoClick}

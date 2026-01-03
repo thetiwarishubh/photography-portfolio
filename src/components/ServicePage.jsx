@@ -94,7 +94,7 @@ const FullProServicesPage = () => {
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl font-light tracking-wide mb-14 text-center">
           Our Services
-        <div className="w-24 h-[1px] bg-gray-600 mx-auto mt-6"></div>
+          <div className="w-24 h-[1px] bg-gray-600 mx-auto mt-6"></div>
         </h1>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -116,7 +116,9 @@ const FullProServicesPage = () => {
 
               {/* TEXT */}
               <h2 className="text-lg font-semibold mb-3">{title}</h2>
-              <p className="text-[15px] text-gray-300 leading-relaxed">{description}</p>
+              <p className="text-[15px] text-gray-300 leading-relaxed">
+                {description}
+              </p>
             </div>
           ))}
         </div>
