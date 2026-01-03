@@ -1,6 +1,9 @@
 import cinematic from "../assets/cinematic.jpg";
 import wedding from "../assets/wedding.jpg";
 import owner from "../assets/owner.jpg";
+import hero1 from "../assets/hero1.jpg"
+import hero4 from "../assets/hero4.jpg"
+import hero5 from "../assets/hero5.jpg"
 
 export const portfolioData = [
   {
@@ -8,7 +11,7 @@ export const portfolioData = [
     slug: "wedding-shoot",
     type: "photo",
     cover: wedding,
-    images: [wedding, cinematic, owner, wedding],
+    images: [hero1, hero4, hero5],
   },
   {
     title: "Cinematic Film",
@@ -25,8 +28,8 @@ export const portfolioData = [
     images: [owner, wedding, cinematic],
   },
   {
-    title: "Pre Wedding Session",
-    slug: "pre-wedding-session",
+    title: "Pre Wedding & Portrait",
+    slug: "pre-wedding-&-portrait-photography",
     type: "photo",
     cover: wedding,
     images: [wedding, owner, cinematic],
@@ -60,8 +63,8 @@ export const portfolioData = [
     images: [wedding, cinematic, owner],
   },
   {
-    title: "Corporate Events",
-    slug: "corporate-events",
+    title: "Drone",
+    slug: "drone",
     type: "video",
     cover: cinematic,
     images: [cinematic, wedding, owner],
