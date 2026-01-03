@@ -8,7 +8,7 @@ export const portfolioData = [
     title: "Wedding Shoot",
     slug: "wedding-shoot",
     type: "photo",
-    cover: wedding,
+    cover: hero5,
     images: [hero1, hero4, hero5],
   },
   {
