@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { portfolioData } from "../data/portfolioData";
+import "../styles/portfolio.css"
 
 const Portfolio = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Portfolio = () => {
             <div
               key={item.slug}
               onClick={() => navigate(`/portfolio/${item.slug}`)}
-              className="relative cursor-pointer rounded-xl overflow-hidden bg-[#1C1C1C]
+              className="portfolio-card relative cursor-pointer rounded-xl overflow-hidden bg-[#1C1C1C]
                          hover:scale-[1.02] transition duration-500"
             >
               <img
@@ -27,7 +28,7 @@ const Portfolio = () => {
               />
 
               <div
-                className="absolute inset-0 bg-black/50 opacity-1000 hover:opacity-0
+                className="absolute inset-0 bg-black/50 opacity-100 hover:opacity-0
                               flex flex-col items-center justify-center transition"
               >
                 <h2 className="text-xl font-semibold">{item.title}</h2>

@@ -15,18 +15,15 @@ const PackagesPage = () => {
         {
           heading: "Coverage & Team",
           points: [
-            "Events Covered: Haldi / Mehndi + Wedding Day",
-            "Professional Team (3 Members)",
-            "1 Photographer (Candid & Portraits)",
-            "1 Cinematographer (Cinematic shots)",
-            "1 Videographer (Traditional Documentary)",
+            "Coverage : 2 Days (Haldi / Mehndi + Wedding Day)",
+            "Team : 3 (Photographer + Videographer + Cinematographer Wedding Day)",
           ],
         },
         {
           heading: "Photography Deliverables",
           points: [
-            "150+ Professionally Edited High-Resolution Images",
-            "Printed Album: Karizma Photo Book (30 Sheets, 12x36 inch)",
+            "150+ Edited High-Resolution Images",
+            "Karizma Photo Book (30 Sheets, 12x36 inch)",
           ],
         },
         {
@@ -35,7 +32,6 @@ const PackagesPage = () => {
             "5-Minute Cinematic Story Film",
             "1-Minute Instagram Teaser",
             "Traditional Video (~120 Minutes, Full HD 1080p)",
-            "1 Professionally Edited Reel",
           ],
         },
         {
@@ -55,24 +51,21 @@ const PackagesPage = () => {
         {
           heading: "Coverage & Team",
           points: [
-            "Duration: Up to 5–6 Hours",
-            "Professional Team (2 Members)",
-            "1 Photographer (Candid + Traditional)",
-            "1 Traditional Videographer",
+            "Coverage : 5–6 Hours",
+            "Team : 2 (Candid Photographer + Traditional Videographer)",
           ],
         },
         {
           heading: "Photography Deliverables",
           points: [
-            "100+ Edited High-Resolution Images",
-            "Quick Sneak Peek (10 Photos within 48 Hours)",
-            "Private Online Gallery",
+            "100+ Edited Images",
+            "Sneak Peek 10 Photos within 48 Hours",
           ],
         },
         {
           heading: "Video Deliverables",
           points: [
-            "45–60 Minute Full Traditional Video (Full HD)",
+            "60 Minute Full Video HD",
             "2–3 Minute Event Highlight",
             "1 Social Media Reel",
           ],
@@ -81,7 +74,6 @@ const PackagesPage = () => {
           heading: "Final Delivery",
           points: [
             "Raw Data (Client provides Hard Drive)",
-            "Online Gallery Access for 3 Months",
           ],
         },
       ],
@@ -95,19 +87,15 @@ const PackagesPage = () => {
         {
           heading: "Coverage & Team",
           points: [
-            "Events: Mehndi + Haldi + Full Wedding Day",
-            "Professional Team (4 Members)",
-            "2 Photographers (Candid + Traditional)",
-            "1 Cinematographer",
-            "1 Videographer",
+            "Coverage : Mehndi + Haldi + Full Wedding Day",
+            "Team : 4 (2 Photographers + 1 Cinematographer + 1 Videographer)",
           ],
         },
         {
           heading: "Photography Deliverables",
           points: [
-            "350+ Edited High-Resolution Images",
-            "Premium Album: Karizma (40 Sheets, 12x36 inch)",
-            "1 LED Photo Frame (12x18 inch)",
+            "350+ Edited Images",
+            "Karizma (80 Page, 12x36 inch)",
           ],
         },
         {
@@ -124,9 +112,15 @@ const PackagesPage = () => {
           points: [
             "Raw Data via Client Hard Drive",
             "1 Branded 32GB USB 3.0 Pendrive",
-            "Private Online Gallery",
           ],
         },
+        {
+          heading : "Bonus",
+          points : [
+            "LED Photo Frame (12x18) + Printed Coffee Mugs + Pendrive"
+          ]
+          
+        }
       ],
     },
 
@@ -138,17 +132,14 @@ const PackagesPage = () => {
           heading: "Coverage & Team",
           points: [
             "Pre-Wedding + Haldi / Mehndi + Wedding Day",
-            "Professional Team (4 Members)",
-            "2 Candid Photographers",
-            "1 Cinematographer",
-            "1 Traditional Videographer",
+            "Team : 4(2 Candid Photographers + 1 Cinematographer + 1 Videographer)",
           ],
         },
         {
           heading: "Photography Deliverables",
           points: [
-            "500+ Edited High-Resolution Images",
-            "Luxury Album (50 Sheets, 14x40 inch)",
+            "500+ Edited Images",
+            "Luxury Album (14x40 inch)",
             "LED Photo Frame (20x30 inch)",
           ],
         },
@@ -162,13 +153,25 @@ const PackagesPage = () => {
           ],
         },
         {
+          heading : "LED Wall & Crane",
+          points : [
+            "16:9 aspect ratio 16X9 feet & 18-30 feet."
+          ]
+        },
+        {
           heading: "Digital Delivery",
           points: [
             "All Raw Data via Client Hard Drive",
             "64GB Branded USB 3.0",
-            "1-Year Online Gallery",
           ],
         },
+        {
+          heading : "Bonus",
+          points : [
+            "LED Photo Frame (20x30) + Printed Coffee Mugs + Pendrive"
+          ]
+          
+        }
       ],
     },
 
@@ -188,17 +191,16 @@ const PackagesPage = () => {
           heading: "Photography Deliverables",
           points: [
             "25+ Retouched Images",
-            "Online Proofing Gallery",
             "Professional Lighting Setup",
           ],
         },
         {
           heading: "Video Deliverables",
-          points: ["60s Cinematic Teaser", "Behind-the-Scenes Reel"],
+          points: ["60s Cinematic Teaser", "BTS Reel"],
         },
         {
           heading: "Final Delivery",
-          points: ["Online Gallery (3 Months)", "Delivery: 7–10 Days"],
+          points: ["Raw Data Provided (on your HDD)"],
         },
       ],
     },
@@ -220,7 +222,6 @@ const PackagesPage = () => {
           points: [
             "75+ Edited Images",
             "24h Express Delivery",
-            "Online Gallery",
           ],
         },
         {

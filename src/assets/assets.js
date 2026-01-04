@@ -14,6 +14,21 @@ import cinematicThree from "./cinematicThree.jpg"
 import engagement from "./engagement.jpg"
 import engagementOne from "./engagementOne.jpg"
 import engagementTwo from "./engagementTwo.jpg"
+import babyShootOne from "./babyShootOne.jpg"
+import babyShootTwo from "./babyShootTwo.jpg"
+import babyShootThree from "./babyShootThree.jpg"
+import droneOne from "./droneOne.jpg"
+import droneTwo from "./droneTwo.jpg"
+import droneThree from "./droneThree.jpg"
+import eventOne from "./eventOne.jpg"
+import eventTwo from "./eventTwo.jpg"
+import eventThree from "./eventThree.jpg"
+import fashionOne from "./fashionOne.jpg"
+import fashionTwo from "./fashionTwo.jpg"
+import fashionThree from "./fashionThree.jpg"
+import productOne from "./productOne.jpg"
+import productTwo from "./productTwo.jpg"
+import productThree from "./productThree.jpg"
 
 export {
   wedding,
@@ -31,5 +46,20 @@ export {
   cinematicThree,
   engagement,
   engagementOne,
-  engagementTwo
+  engagementTwo,
+  babyShootOne,
+  babyShootTwo,
+  babyShootThree,
+  droneOne,
+  droneTwo,
+  droneThree,
+  eventOne,
+  eventTwo,
+  eventThree,
+  fashionOne,
+  fashionTwo,
+  fashionThree,
+  productOne,
+  productTwo,
+  productThree
 };
