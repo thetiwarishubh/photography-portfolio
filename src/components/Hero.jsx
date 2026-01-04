@@ -65,7 +65,7 @@ const Hero = () => {
 
       {/* CONTENT */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center">
-        <h1 className="hero-heading text-5xl md:text-6xl font-bold text-[#C89B3C] mb-4">
+        <h1 className="hero-heading text-4xl md:text-6xl font-bold text-[#C89B3C] mb-4">
           We Capture Happiness
         </h1>
 
