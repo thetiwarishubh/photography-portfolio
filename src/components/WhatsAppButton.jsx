@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "919905170994";
+  const phoneNumber = "918298246846";
 
   const message = `
 This message is auto-generated from the website,
