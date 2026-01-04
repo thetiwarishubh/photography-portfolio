@@ -1,6 +1,10 @@
 import { useState } from "react";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
-import WhatsAppButton from "../components/WhatsAppButton";
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -10,16 +14,53 @@ const ContactPage = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you! We’ll get back to you shortly.");
-    <WhatsAppButton />
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    console.log(setFormData)
+
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Please fill all required fields");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    setLoading(true);
+
+    const phoneNumber = "918298246846";
+
+    const whatsappMessage = `
+      Hello DS Photography ☺️
+
+      📌 Name: ${formData.name}   
+      📧 Email: ${formData.email}
+      🎯 Service: ${formData.subject}
+      💬 Message: ${formData.message}
+      `;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+
+    setLoading(false);
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (
@@ -62,7 +103,7 @@ const ContactPage = () => {
               </div>
             </div>
 
-            {/* MAP (IMAGE-2 STYLE) */}
+            {/* MAP */}
             <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-lg">
               <iframe
                 title="DS Photography Location"
@@ -82,32 +123,66 @@ const ContactPage = () => {
             className="bg-[#1C1C1C] p-8 rounded-2xl shadow-xl"
           >
             <div className="space-y-5">
-              {[
-                { label: "Name", name: "name", type: "text" },
-                { label: "Email", name: "email", type: "email" },
-                { label: "Subject", name: "subject", type: "text" },
-              ].map((field) => (
-                <div key={field.name}>
-                  <label className="block mb-1 font-medium">
-                    {field.label}
-                  </label>
-                  <input
-                    type={field.type}
-                    name={field.name}
-                    value={formData[field.name]}
-                    onChange={handleChange}
-                    required
-                    className="w-full p-3 rounded-md bg-[#0F0F0F]
-                               border border-gray-700
-                               focus:border-[#C89B3C]
-                               focus:ring-1 focus:ring-[#C89B3C]
-                               outline-none transition"
-                  />
-                </div>
-              ))}
-
+              {/* Name */}
               <div>
-                <label className="block mb-1 font-medium">Message</label>
+                <label className="block mb-1 font-medium">Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  autoComplete="name"
+                  className="w-full p-3 rounded-md bg-[#0F0F0F]
+                             border border-gray-700
+                             focus:border-[#C89B3C]
+                             outline-none"
+                />
+              </div>
+
+              {/* Email */}
+              <div>
+                <label className="block mb-1 font-medium">Email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  autoComplete="email"
+                  className="w-full p-3 rounded-md bg-[#0F0F0F]
+                             border border-gray-700
+                             focus:border-[#C89B3C]
+                             outline-none"
+                />
+              </div>
+
+              {/* Subject */}
+              <div>
+                <label className="block mb-1 font-medium">Service *</label>
+                <select
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full p-3 rounded-md bg-[#0F0F0F]
+                             border border-gray-700
+                             focus:border-[#C89B3C]
+                             outline-none cursor-pointer"
+                >
+                  <option value="">Select Service</option>
+                  <option value="Wedding Photography">
+                    Wedding Photography
+                  </option>
+                  <option value="Cinematic Film">Cinematic Film</option>
+                  <option value="Pre Wedding Shoot">Pre Wedding Shoot</option>
+                  <option value="Event Coverage">Event Coverage</option>
+                </select>
+              </div>
+
+              {/* Message */}
+              <div>
+                <label className="block mb-1 font-medium">Message *</label>
                 <textarea
                   name="message"
                   rows="5"
@@ -117,19 +192,22 @@ const ContactPage = () => {
                   className="w-full p-3 rounded-md bg-[#0F0F0F]
                              border border-gray-700
                              focus:border-[#C89B3C]
-                             focus:ring-1 focus:ring-[#C89B3C]
-                             outline-none transition"
+                             outline-none"
                 />
               </div>
 
+              {/* Button */}
               <button
                 type="submit"
+                disabled={loading}
                 className="w-full mt-4 bg-[#C89B3C] text-black
                            font-semibold py-3 rounded-md
-                           hover:bg-yellow-500 hover:shadow-lg
-                           active:scale-95 transition cursor-pointer"
+                           flex items-center justify-center gap-2
+                           hover:bg-yellow-500
+                           disabled:opacity-60 transition cursor-pointer"
               >
-                Send Message
+                <FaWhatsapp />
+                {loading ? "Sending..." : "Send on WhatsApp"}
               </button>
             </div>
           </form>
