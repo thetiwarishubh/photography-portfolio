@@ -4,7 +4,7 @@ const FeaturedWork = () => {
   return (
     <div className="bg-[#0F0F0F]">
       <section className="bg-[#0F0F0F] py-16 px-6 max-w-7xl mx-auto text-white">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center text-[#C89B3C] mb-6">
+        <h2 className="text-2xl md:text-3xl font-normal tracking-wide mb-6 text-center">
           Featured Work
         </h2>
 

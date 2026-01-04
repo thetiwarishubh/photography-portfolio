@@ -6,7 +6,7 @@ const FeaturedWork = () => {
     <div className="bg-[#0F0F0F]">
       <section className="py-16 px-6 max-w-7xl mx-auto text-white">
         {/* Heading */}
-        <h2 className="text-center text-3xl md:text-4xl font-semibold text-[#C89B3C] mb-4">
+        <h2 className="text-center text-2xl md:text-3xl font-normal tracking-wide mb-4">
           Portfolio
         </h2>
 
@@ -70,9 +70,9 @@ const FeaturedWork = () => {
         <div className="text-center mt-14">
           <Link
             to="/portfolio"
-            className="inline-block border border-[#C89B3C] text-[#C89B3C] px-8 py-3 rounded-full text-sm tracking-wide hover:bg-[#C89B3C] hover:text-black transition"
+            className="bg-[#C89B3C] text-[#000] px-8 py-3 rounded-md font-semibold hover:scale-104 transition duration-400 cursor-pointer"
           >
-            View Full Portfolio
+            View All Portfolio
           </Link>
         </div>
       </section>
