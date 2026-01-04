@@ -74,7 +74,7 @@ const Hero = () => {
         </p>
 
         <Link to="/contact" className="fade-up delay-3">
-          <button className="bg-[#C89B3C] px-8 py-3 rounded-md font-semibold hover:scale-105 transition">
+          <button className="bg-[#C89B3C] px-8 py-3 rounded-md font-semibold hover:scale-105 transition cursor-pointer">
             Book a Session
           </button>
         </Link>

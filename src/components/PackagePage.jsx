@@ -290,7 +290,7 @@ const PackagesPage = () => {
                 <button
                   onClick={handleBook}
                   className="mt-10 bg-[#C89B3C] text-black px-10 py-3 rounded-lg font-semibold
-                  hover:scale-105 hover:shadow-xl transition w-full lg:w-auto"
+                  hover:scale-105 hover:shadow-xl transition w-full lg:w-auto cursor-pointer"
                 >
                   Book Now
                 </button>

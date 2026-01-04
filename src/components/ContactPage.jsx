@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -16,7 +17,9 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Thank you! We’ll get back to you shortly.");
+    <WhatsAppButton />
     setFormData({ name: "", email: "", subject: "", message: "" });
+    console.log(setFormData)
   };
 
   return (
@@ -124,7 +127,7 @@ const ContactPage = () => {
                 className="w-full mt-4 bg-[#C89B3C] text-black
                            font-semibold py-3 rounded-md
                            hover:bg-yellow-500 hover:shadow-lg
-                           active:scale-95 transition"
+                           active:scale-95 transition cursor-pointer"
               >
                 Send Message
               </button>
