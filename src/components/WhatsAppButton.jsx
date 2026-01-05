@@ -21,7 +21,6 @@ Time: ${new Date().toLocaleString()};
     message
   )}`;
 
-  window.open(whatsappURL, "_blank");
 
   return (
     <a
