@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { portfolioData } from "../data/portfolioData";
+import { Link } from "react-router-dom";
 
 const PortfolioDetails = () => {
   const { slug } = useParams();
@@ -27,6 +28,9 @@ const PortfolioDetails = () => {
   return (
     <section className="bg-[#0F0F0F] text-white min-h-screen py-24 px-6">
       <div className="max-w-7xl mx-auto">
+        <Link className="absolute" to="/portfolio">
+        <button className="bg-[#C89B3C] px-8 py-3 rounded-md font-semibold transition duration-400 cursor-pointer text-[#000]">Back to Portfolio</button>
+        </Link>
         <h1 className="text-4xl text-center mb-12">{portfolio.title}</h1>
 
         {/* GRID */}
