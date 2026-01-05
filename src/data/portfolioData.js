@@ -111,8 +111,8 @@ export const portfolioData = [
     images: [haldi, babyShootTwo, babyShootThree],
   },
   {
-    title: "Baby Shoot",
-    slug: "baby-shoot",
+    title: "Details Decor",
+    slug: "details-decor",
     type: "photo",
     cover: babyShootOne,
     images: [babyShootOne, babyShootTwo, babyShootThree],
