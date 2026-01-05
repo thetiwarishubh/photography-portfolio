@@ -14,11 +14,11 @@ import cinematicThree from "./cinematicThree.jpg"
 import engagement from "./engagement.jpg"
 import engagementOne from "./engagementOne.jpg"
 import engagementTwo from "./engagementTwo.jpg"
-import babyShootOne from "./babyshootOne.jpg"
-import babyShootTwo from "./babyshootTwo.jpg"
-import babyShootThree from "./babyshootThree.jpg"
-import droneOne from "./droneOne.jpg"
-import droneTwo from "./droneTwo.jpg"
+import babyShootOne from "./baby1.jpg"
+import babyShootTwo from "./baby2.jpg"
+import babyShootThree from "./baby3.jpg"
+import drone1 from "./drone1.jpg"
+import drone2 from "./drone2.jpg"
 import droneThree from "./droneThree.jpg"
 import eventOne from "./eventOne.jpg"
 import eventTwo from "./eventTwo.jpg"
@@ -29,6 +29,11 @@ import fashionThree from "./fashionThree.jpg"
 import productOne from "./productOne.jpg"
 import productTwo from "./productTwo.jpg"
 import productThree from "./productThree.jpg"
+import m2 from "./M2.jpg"
+import m3 from "./M3.jpg"
+import product from "./product1.jpg"
+import candid from "./candid.jpg"
+import haldi from "./haldi.jpg"
 
 export {
   wedding,
@@ -50,8 +55,8 @@ export {
   babyShootOne,
   babyShootTwo,
   babyShootThree,
-  droneOne,
-  droneTwo,
+  drone1,
+  drone2,
   droneThree,
   eventOne,
   eventTwo,
@@ -61,5 +66,10 @@ export {
   fashionThree,
   productOne,
   productTwo,
-  productThree
+  productThree,
+  m2,
+  m3,
+  product,
+  candid,
+  haldi
 };

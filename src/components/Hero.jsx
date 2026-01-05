@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import "../styles/hero.css";
 
 import Hero1 from "../assets/hero1.jpg";
-import Hero2 from "../assets/hero2.png";
+import Hero2 from "../assets/COVER-02.jpg";
 import Hero3 from "../assets/hero3.png";
 import Hero4 from "../assets/hero4.JPG";
 import Hero5 from "../assets/hero5.JPG";

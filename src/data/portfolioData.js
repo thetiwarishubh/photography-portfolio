@@ -1,5 +1,4 @@
-import cinematic from "../assets/cinematic.jpg";
-import wedding from "../assets/wedding.jpg";
+import wedding from "../assets/COVER-02.jpg";
 import owner from "../assets/owner.jpg";
 import {
   hero1,
@@ -17,18 +16,20 @@ import {
   babyShootOne,
   babyShootTwo,
   babyShootThree,
-  droneOne,
-  droneTwo,
+  drone1,
+  drone2,
   droneThree,
   eventOne,
   eventTwo,
   eventThree,
   fashionOne,
-  fashionTwo,
-  fashionThree,
-  productOne,
   productTwo,
-  productThree
+  productThree,
+  m2,
+  m3,
+  product,
+  candid,
+  haldi
 } from "../assets/assets";
 
 export const portfolioData = [
@@ -37,7 +38,7 @@ export const portfolioData = [
     slug: "wedding-shoot",
     type: "photo",
     cover: hero5,
-    images: [hero1, hero4, hero5],
+    images: [hero1, hero4, hero5,wedding],
   },
   {
     title: "Cinematic Film",
@@ -55,7 +56,7 @@ export const portfolioData = [
   },
   {
     title: "Pre Wedding & Portrait",
-    slug: "pre-wedding-&-portrait-photography",
+    slug: "pre-wedding-&-portrait",
     type: "photo",
     cover: portrait,
     images: [portrait, preWedding, portraitOne],
@@ -68,32 +69,46 @@ export const portfolioData = [
     images: [eventOne, eventTwo, eventThree],
   },
   {
-    title: "Portrait Photography",
-    slug: "portrait-photography",
+    title: "Candid Photography",
+    slug: "candid-photography",
     type: "photo",
-    cover: owner,
-    images: [owner, owner, wedding],
+    cover: candid,
+    images: [candid, owner, wedding],
   },
   {
-    title: "Fashion Shoot",
-    slug: "fashion-shoot",
+    title: "Fashion & Modal Shoot",
+    slug: "fashion-Modal",
     type: "photo",
-    cover: fashionOne,
-    images: [fashionOne, fashionTwo, fashionThree],
+    cover: m3,
+    images: [fashionOne, m2, m3],
   },
   {
     title: "Product Shoot",
     slug: "product-shoot",
     type: "photo",
-    cover: productOne,
-    images: [productOne, productTwo, productThree],
+    cover: product,
+    images: [product, productTwo, productThree],
   },
   {
     title: "Drone",
     slug: "drone",
     type: "video",
-    cover: droneOne,
-    images: [droneOne, droneTwo, droneThree],
+    cover: drone1,
+    images: [drone1, drone2, droneThree],
+  },
+  {
+    title: "Baby Shoot",
+    slug: "baby-shoot",
+    type: "photo",
+    cover: babyShootOne,
+    images: [babyShootOne, babyShootTwo, babyShootThree],
+  },
+  {
+    title: "Haldi & Mehandi Shoot",
+    slug: "haldi-&-mehandi",
+    type: "photo",
+    cover: haldi,
+    images: [haldi, babyShootTwo, babyShootThree],
   },
   {
     title: "Baby Shoot",
