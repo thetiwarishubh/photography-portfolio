@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
@@ -11,6 +11,20 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setOpen(false);
   };
+
+  useEffect(() => {
+    if (!open) return;
+
+    const handleScroll = () => {
+      setOpen(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [open]);
 
   const navItems = [
     "Home",
@@ -66,12 +80,21 @@ const Navbar = () => {
         <button
           aria-label="Toggle Menu"
           aria-expanded={open}
-          className="lg:hidden flex flex-col gap-1.5 cursor-pointer"
+          className="lg:hidden flex flex-col justify-center gap-1.5 w-8 h-8 cursor-pointer"
           onClick={() => setOpen(!open)}
         >
-          <span className="w-6 h-[2px] bg-white"></span>
-          <span className="w-6 h-[2px] bg-white"></span>
-          <span className="w-6 h-[2px] bg-white"></span>
+          <span
+            className={`h-[2px] bg-white transition-all duration-300
+    ${open ? "rotate-45 translate-y-[6px]" : ""}`}
+          />
+          <span
+            className={`h-[2px] bg-white transition-all duration-300
+    ${open ? "opacity-0" : ""}`}
+          />
+          <span
+            className={`h-[2px] bg-white transition-all duration-300
+    ${open ? "-rotate-45 -translate-y-[6px]" : ""}`}
+          />
         </button>
       </nav>
 

@@ -28,10 +28,18 @@ const PortfolioDetails = () => {
   return (
     <section className="bg-[#0F0F0F] text-white min-h-screen py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <Link className="absolute" to="/portfolio">
-        <button className="bg-[#C89B3C] px-8 py-3 rounded-md font-semibold transition duration-400 cursor-pointer text-[#000]">Back to Portfolio</button>
-        </Link>
-        <h1 className="text-4xl text-center mb-12">{portfolio.title}</h1>
+        <div className="flex md:absolute justify-start mb-8">
+          <Link to="/portfolio">
+            <button
+              className="bg-[#C89B3C] px-6 py-2 rounded-md font-semibold 
+                       transition duration-300 cursor-pointer text-[#000]
+                       hover:bg-yellow-500"
+            >
+              ← Back to Portfolio
+            </button>
+          </Link>
+        </div>
+        <h1 className="text-4xl text-center mb-12 transition-all duration-700 ease-out">{portfolio.title}</h1>
 
         {/* GRID */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

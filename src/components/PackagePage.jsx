@@ -244,7 +244,7 @@ const PackagesPage = () => {
           <div className="w-24 h-[1px] bg-gray-600 mx-auto mt-6"></div>
         </h1>
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {packages.map((pkg, index) => (
             <div
               key={index}
