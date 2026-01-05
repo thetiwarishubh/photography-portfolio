@@ -36,7 +36,7 @@ const FullProServicesPage = () => {
     {
       title: "Pre-Wedding & Engagement",
       description:
-        "Creative and romantic sessions celebrating your journey before the the Big Day.",
+        "Creative and romantic sessions celebrating your journey before the Big Day.",
       icon: <FaHeart />,
     },
     {
