@@ -24,7 +24,6 @@ import eventOne from "./eventOne.jpg"
 import eventTwo from "./eventTwo.jpg"
 import eventThree from "./eventThree.jpg"
 import fashionOne from "./fashionOne.jpg"
-import productOne from "./productOne.jpg"
 import productTwo from "./productTwo.jpg"
 import productThree from "./productThree.jpg"
 import m2 from "./M2.jpg"
@@ -67,7 +66,6 @@ export {
   eventTwo,
   eventThree,
   fashionOne,
-  productOne,
   productTwo,
   productThree,
   m2,
