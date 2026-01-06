@@ -37,6 +37,8 @@ import haldi from "./haldi.jpg"
 import decor from "./decor.jpg"
 import decor1 from "./decor1.jpg"
 import decor2 from "./decor2.jpg"
+import mehandi from "./mehandi.jpg"
+import mehandi1 from "./mehandi1.jpg"
 
 export {
   wedding,
@@ -77,5 +79,7 @@ export {
   haldi,
   decor,
   decor1,
-  decor2
+  decor2,
+  mehandi,
+  mehandi1
 };

@@ -32,7 +32,9 @@ import {
   haldi,
   decor,
   decor1,
-  decor2
+  decor2,
+  mehandi,
+  mehandi1
 } from "../assets/assets";
 
 export const portfolioData = [
@@ -110,8 +112,8 @@ export const portfolioData = [
     title: "Haldi & Mehandi Shoot",
     slug: "haldi-&-mehandi",
     type: "photo",
-    cover: haldi,
-    images: [haldi, babyShootTwo, babyShootThree],
+    cover: mehandi,
+    images: [haldi, mehandi, mehandi1],
   },
   {
     title: "Details & Decor",

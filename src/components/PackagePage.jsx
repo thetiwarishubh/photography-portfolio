@@ -45,7 +45,7 @@ const PackagesPage = () => {
     },
 
     {
-      title: "Engagement & Reception Package",
+      title: "Engagement / Reception Package",
       price: "₹25,000",
       sections: [
         {
