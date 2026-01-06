@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
-import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import FacebookIcon from "../assets/fb.png";
+import InstagramIcon from "../assets/insta.png";
+import YoutubeIcon from "../assets/yt.png";
 
 const Footer = () => {
   return (
@@ -25,34 +27,48 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Icons */}
+          {/* Social Media Icons (Client PNGs) */}
           <div className="flex gap-4 pl-1">
             <a
               href="https://www.facebook.com/dsphotography4u"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="text-gray-400 hover:text-[#C89B3C] hover:scale-110 transition"
+              className="hover:scale-110 transition"
             >
-              <FaFacebookF size={20} />
+              <img
+                src={FacebookIcon}
+                alt="Facebook"
+                className="w-7 h-7 object-contain"
+              />
             </a>
+
             <a
               href="https://www.instagram.com/dsphotography4u"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-gray-400 hover:text-[#C89B3C] hover:scale-110 transition"
+              className="hover:scale-110 transition"
             >
-              <FaInstagram size={20} />
+              <img
+                src={InstagramIcon}
+                alt="Instagram"
+                className="w-7 h-7 object-contain"
+              />
             </a>
+
             <a
               href="https://www.youtube.com/@dsphotography4u"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="text-gray-400 hover:text-[#C89B3C] hover:scale-110 transition"
+              className="hover:scale-110 transition"
             >
-              <FaYoutube size={20} />
+              <img
+                src={YoutubeIcon}
+                alt="YouTube"
+                className="w-7 h-7 object-contain"
+              />
             </a>
           </div>
         </div>
