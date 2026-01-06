@@ -35,7 +35,8 @@ import {
   decor2,
   mehandi,
   mehandi1,
-  weddings
+  weddings,
+  weddingImages
 } from "../assets/assets";
 
 export const portfolioData = [
@@ -44,7 +45,7 @@ export const portfolioData = [
     slug: "wedding-shoot",
     type: "photo",
     cover: hero5,
-    images: [hero1, hero4, hero5,wedding, weddings],
+    images: [hero1, hero4, hero5,wedding, weddings, weddingImages],
   },
   {
     title: "Cinematic Film",

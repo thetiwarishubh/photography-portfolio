@@ -38,6 +38,7 @@ import decor2 from "./decor2.jpg"
 import mehandi from "./mehandi.jpg"
 import mehandi1 from "./mehandi1.jpg"
 import weddings from "./weddingss.jpg"
+import weddingImages from "./wedding-images.jpg"
 
 export {
   wedding,
@@ -79,5 +80,6 @@ export {
   decor2,
   mehandi,
   mehandi1,
-  weddings
+  weddings,
+  weddingImages
 };
