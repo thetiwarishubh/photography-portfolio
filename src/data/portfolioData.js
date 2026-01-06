@@ -29,7 +29,10 @@ import {
   m3,
   product,
   candid,
-  haldi
+  haldi,
+  decor,
+  decor1,
+  decor2
 } from "../assets/assets";
 
 export const portfolioData = [
@@ -114,7 +117,7 @@ export const portfolioData = [
     title: "Details & Decor",
     slug: "details-&-decor",
     type: "photo",
-    cover: babyShootOne,
-    images: [babyShootOne, babyShootTwo, babyShootThree],
+    cover: decor,
+    images: [decor, decor1, decor2],
   },
 ];

@@ -34,6 +34,9 @@ import m3 from "./M3.jpg"
 import product from "./product1.jpg"
 import candid from "./candid.jpg"
 import haldi from "./haldi.jpg"
+import decor from "./decor.jpg"
+import decor1 from "./decor1.jpg"
+import decor2 from "./decor2.jpg"
 
 export {
   wedding,
@@ -71,5 +74,8 @@ export {
   m3,
   product,
   candid,
-  haldi
+  haldi,
+  decor,
+  decor1,
+  decor2
 };
