@@ -1,6 +1,6 @@
 import wedding from "./wedding.jpg";
 import cinematic from "./cinematic.jpg";
-import event from "./events.jpg";
+import event from "./event.jpg";
 import owner from "./owner.jpg"
 import hero1 from "./hero1.jpg"
 import hero4 from "./hero4.JPG"

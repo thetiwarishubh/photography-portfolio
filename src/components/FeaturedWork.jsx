@@ -1,4 +1,4 @@
-import { wedding, event, product, cinematicTwo } from "../assets/assets";
+import { wedding, event, cinematicTwo } from "../assets/assets";
 
 const FeaturedWork = () => {
   return (
