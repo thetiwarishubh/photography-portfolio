@@ -24,8 +24,6 @@ import eventOne from "./eventOne.jpg"
 import eventTwo from "./eventTwo.jpg"
 import eventThree from "./eventThree.jpg"
 import fashionOne from "./fashionOne.jpg"
-import fashionTwo from "./fashionTwo.jpg"
-import fashionThree from "./fashionThree.jpg"
 import productOne from "./productOne.jpg"
 import productTwo from "./productTwo.jpg"
 import productThree from "./productThree.jpg"
@@ -39,6 +37,7 @@ import decor1 from "./decor1.jpg"
 import decor2 from "./decor2.jpg"
 import mehandi from "./mehandi.jpg"
 import mehandi1 from "./mehandi1.jpg"
+import weddings from "./weddingss.jpg"
 
 export {
   wedding,
@@ -67,8 +66,6 @@ export {
   eventTwo,
   eventThree,
   fashionOne,
-  fashionTwo,
-  fashionThree,
   productOne,
   productTwo,
   productThree,
@@ -81,5 +78,6 @@ export {
   decor1,
   decor2,
   mehandi,
-  mehandi1
+  mehandi1,
+  weddings
 };

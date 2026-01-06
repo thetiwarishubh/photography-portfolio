@@ -1,4 +1,4 @@
-import { wedding, event, cinematic } from "../assets/assets";
+import { wedding, event, product, cinematicTwo } from "../assets/assets";
 
 const FeaturedWork = () => {
   return (
@@ -42,7 +42,7 @@ const FeaturedWork = () => {
           {/* Creative Shoots */}
           <div className="group relative overflow-hidden rounded-xl cursor-pointer">
             <img
-              src={cinematic}
+              src={cinematicTwo}
               alt="Creative Shoots"
               className="w-full h-48 object-cover group-hover:scale-110 transition duration-500"
             />

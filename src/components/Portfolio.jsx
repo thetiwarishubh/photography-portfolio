@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { hero1, eventThree, fashionThree } from "../assets/assets";
+import { hero1, eventThree, drone2 } from "../assets/assets";
 
 const FeaturedWork = () => {
   return (
@@ -53,7 +53,7 @@ const FeaturedWork = () => {
           <Link to="/portfolio">
             <div className="group relative overflow-hidden rounded-xl cursor-pointer">
               <img
-                src={fashionThree}
+                src={drone2}
                 alt="Creative Shoots Portfolio"
                 className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110"
               />
