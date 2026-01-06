@@ -28,7 +28,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-4 pl-1">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/dsphotography4u"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -37,7 +37,7 @@ const Footer = () => {
               <FaFacebookF size={20} />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/dsphotography4u"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -46,7 +46,7 @@ const Footer = () => {
               <FaInstagram size={20} />
             </a>
             <a
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/@dsphotography4u"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
