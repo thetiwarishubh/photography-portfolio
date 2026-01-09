@@ -89,12 +89,22 @@ const ContactPage = () => {
             <div className="space-y-5 text-gray-300">
               <div className="flex items-center gap-4">
                 <FaEnvelope className="text-[#C89B3C]" />
-                <span>dsphotography4u@gmail.com</span>
+                <a
+                  href="mailto:dsphotography4u@gmail.com"
+                  className="hover:text-[#C89B3C] transition"
+                >
+                  dsphotography4u@gmail.com
+                </a>
               </div>
 
               <div className="flex items-center gap-4">
                 <FaPhoneAlt className="text-[#C89B3C]" />
-                <span>+91 82982 46846</span>
+                <a
+                  href="tel:+918298246846"
+                  className="hover:text-[#C89B3C] transition"
+                >
+                  +91 82982 46846
+                </a>
               </div>
 
               <div className="flex items-center gap-4">
