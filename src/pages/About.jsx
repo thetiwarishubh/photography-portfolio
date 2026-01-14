@@ -4,7 +4,6 @@ import AboutPage from "../components/AboutPage";
 const About = () => {
   return (
     <>
-      {/* SEO */}
       <Helmet>
         <title>About DS Photography | Professional Wedding Photographer</title>
         <meta
@@ -18,9 +17,7 @@ const About = () => {
         <link rel="canonical" href="https://www.dsphotography.com/about" />
       </Helmet>
 
-      {/* Page Content */}
       <div>
-        {/* Only ONE H1 for SEO */}
         <h1 className="sr-only">
           About DS Photography – Wedding & Event Photography Experts
         </h1>

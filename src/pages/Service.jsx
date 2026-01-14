@@ -4,7 +4,6 @@ import ServicesPage from "../components/ServicePage";
 const Service = () => {
   return (
     <>
-      {/* SEO */}
       <Helmet key="services" prioritizeSeoTags>
         <title>Photography Services | Wedding, Event & Pre-Wedding – DS Photography</title>
         <meta
@@ -18,9 +17,7 @@ const Service = () => {
         <link rel="canonical" href="https://www.dsphotography.com/services" />
       </Helmet>
 
-      {/* Page Content */}
       <div>
-        {/* Only ONE H1 for SEO */}
         <h1 className="sr-only">
           Professional Wedding, Event & Cinematic Photography Services
         </h1>

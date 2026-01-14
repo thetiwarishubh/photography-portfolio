@@ -4,7 +4,6 @@ import PortfolioPage from "../components/PortfolioPage";
 const Portfolio = () => {
   return (
     <>
-      {/* SEO */}
       <Helmet key="portfolio" prioritizeSeoTags>
         <title>Photography Portfolio | Wedding & Event Work – DS Photography</title>
         <meta
@@ -18,9 +17,7 @@ const Portfolio = () => {
         <link rel="canonical" href="https://www.dsphotography.com/portfolio" />
       </Helmet>
 
-      {/* Page Content */}
       <div>
-        {/* Only ONE H1 for SEO */}
         <h1 className="sr-only">
           Wedding, Event & Pre-Wedding Photography Portfolio
         </h1>

@@ -4,7 +4,6 @@ import PackagesPage from "../components/PackagePage";
 const Packages = () => {
   return (
     <>
-      {/* SEO */}
       <Helmet key="packages" prioritizeSeoTags>
         <title>Photography Packages & Pricing | DS Photography</title>
         <meta
@@ -18,9 +17,7 @@ const Packages = () => {
         <link rel="canonical" href="https://www.dsphotography.com/packages" />
       </Helmet>
 
-      {/* Page Content */}
       <div>
-        {/* Only ONE H1 for SEO */}
         <h1 className="sr-only">
           Photography Packages & Pricing by DS Photography
         </h1>

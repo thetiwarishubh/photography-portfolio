@@ -12,7 +12,6 @@ import CTA from "../components/CTA";
 const Home = () => {
   return (
     <>
-      {/* SEO */}
       <Helmet>
         <title>DS Photography | Wedding, Event & Cinematic Photography</title>
         <meta
@@ -26,9 +25,7 @@ const Home = () => {
         <link rel="canonical" href="https://www.dsphotography.com/" />
       </Helmet>
 
-      {/* Page Content */}
       <div>
-        {/* H1 – Only ONE on page (Hero ke andar bhi h1 duplicate na ho) */}
         <h1 className="sr-only">
           Professional Wedding & Event Photography by DS Photography
         </h1>
