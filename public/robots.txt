@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dsphotography4u.vercel.app/sitemap.xml
