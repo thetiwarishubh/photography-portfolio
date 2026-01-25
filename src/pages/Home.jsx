@@ -36,7 +36,6 @@ const Home = () => {
         <FeaturedWork />
         <Portfolio />
         <WhyChooseUs />
-        <ClientReviews />
         <CTA />
       </div>
     </>
