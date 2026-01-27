@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { portfolioData } from "../data/portfolioData";
 import { Link } from "react-router-dom";
 
@@ -13,15 +13,39 @@ const PortfolioDetails = () => {
     return <p className="text-white text-center mt-32">Portfolio not found</p>;
   }
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (activeIndex === null) return;
+
+      if (e.key === "Escape") {
+        setActiveIndex(null);
+      }
+
+      if (e.key === "ArrowRight") {
+        nextImage();
+      }
+
+      if (e.key === "ArrowLeft") {
+        prevImage();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [activeIndex]);
+
   const nextImage = () => {
     setActiveIndex((prev) =>
-      prev === portfolio.images.length - 1 ? 0 : prev + 1
+      prev === portfolio.images.length - 1 ? 0 : prev + 1,
     );
   };
 
   const prevImage = () => {
     setActiveIndex((prev) =>
-      prev === 0 ? portfolio.images.length - 1 : prev - 1
+      prev === 0 ? portfolio.images.length - 1 : prev - 1,
     );
   };
 
@@ -39,7 +63,9 @@ const PortfolioDetails = () => {
             </button>
           </Link>
         </div>
-        <h1 className="text-4xl text-center mb-12 transition-all duration-700 ease-out">{portfolio.title}</h1>
+        <h1 className="text-4xl text-center mb-12 transition-all duration-700 ease-out">
+          {portfolio.title}
+        </h1>
 
         {/* GRID */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -58,7 +84,7 @@ const PortfolioDetails = () => {
 
       {/* 🔥 LIGHTBOX */}
       {activeIndex !== null && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center">
           {/* CLOSE */}
           <button
             onClick={() => setActiveIndex(null)}
@@ -83,7 +109,7 @@ const PortfolioDetails = () => {
           <img
             src={portfolio.images[activeIndex]}
             alt=""
-            className="max-h-[85vh] max-w-[90vw] rounded-lg shadow-2xl border border-white/70"
+            className="max-h-[85vh] max-w-[90vw] rounded-xl border border-white/20 shadow-2xl hover:border-[#C89B3C] hover:shadow-[#C89B3C]/25 transition-all duration-300"
           />
 
           {/* NEXT */}
