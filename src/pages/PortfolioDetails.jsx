@@ -209,13 +209,13 @@ const PortfolioDetails = () => {
           {/* PREV */}
           <button
             onClick={handlePrevImage}
-            className="absolute left-6 text-white text-4xl cursor-pointer z-50
+            className="absolute left-6 text-white text-3xl md:text-4xl cursor-pointer z-50
                       w-12 h-12 rounded-full 
                       flex items-center justify-center
                       bg-black/50 backdrop-blur-sm
                       border border-white/30 hover:border-[#C89B3C]
                       hover:bg-black/70
-                      transition-all duration-300 hover:scale-110 pb-2"
+                      transition-all duration-300 hover:scale-110 pb-1.5 md:pb-2.5"
           >
             ‹
           </button>
@@ -246,13 +246,13 @@ const PortfolioDetails = () => {
           {/* NEXT */}
           <button
             onClick={handleNextImage}
-            className="absolute right-6 text-white text-4xl cursor-pointer z-50
+            className="absolute right-6 text-white text-3xl md:text-4xl cursor-pointer z-50
                       w-12 h-12 rounded-full 
                       flex items-center justify-center
                       bg-black/50 backdrop-blur-sm
                       border border-white/30 hover:border-[#C89B3C]
                       hover:bg-black/70
-                      transition-all duration-300 hover:scale-110 pb-2"
+                      transition-all duration-300 hover:scale-110 pb-1.5 md:pb-2.5"
           >
             ›
           </button>
