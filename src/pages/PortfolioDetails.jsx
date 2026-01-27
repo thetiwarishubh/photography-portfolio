@@ -215,7 +215,7 @@ const PortfolioDetails = () => {
                       bg-black/50 backdrop-blur-sm
                       border border-white/30 hover:border-[#C89B3C]
                       hover:bg-black/70
-                      transition-all duration-300 hover:scale-110 pb-2.5"
+                      transition-all duration-300 hover:scale-110 pb-2"
           >
             ‹
           </button>
@@ -252,7 +252,7 @@ const PortfolioDetails = () => {
                       bg-black/50 backdrop-blur-sm
                       border border-white/30 hover:border-[#C89B3C]
                       hover:bg-black/70
-                      transition-all duration-300 hover:scale-110 pb-2.5"
+                      transition-all duration-300 hover:scale-110 pb-2"
           >
             ›
           </button>
